@@ -1,0 +1,125 @@
+@import "normalize";
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+@import "ok-ribbon";
+@import "ok-footer";
+
+body {
+    & > header {
+        background-color: $red;
+        color: #fff;
+        padding-top: $base-spacing;
+
+        a {
+            color: inherit;
+        }
+
+        & > section {
+            $hastagheight: 140px;
+            @include outer-container;
+            position: relative;
+            @media (min-width: $medium-screen) {
+                background-image: url(../img/man.svg);
+                background-repeat: no-repeat;
+                background-size: 31.7616% auto;
+                background-position: left $hastagheight;
+            }
+
+            .hashtag {
+                padding: 0 $base-spacing;
+
+                a {
+                    color: $base-font-color;
+                    background-color: #fff;
+                    padding: $small-spacing;
+                    display: inline-block;
+                }
+
+                svg {
+                    display: none;
+                }
+
+                @media (min-width: $medium-screen) {
+                    @include span-columns(4);
+                    padding: 0;
+
+                    a {
+                        display: block;
+                        text-align: center;
+                        padding: 0 10px;
+                        height: $hastagheight;
+                        line-height: $hastagheight;
+                        font-size: 48px;
+                        font-weight: bold;
+                    }
+                    svg {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                @media (min-width: $large-screen) {
+                    a {
+                        font-size: 68px;
+                    }
+                }
+            }
+
+            .intro {
+                padding: $base-spacing;
+
+                h1 {
+                    font-size: 50px;
+                    margin-bottom: 0.2em;
+                }
+
+                & > a {
+                    @extend button;
+                    background-color: $dark-gray;
+                    text-transform: uppercase;
+                }
+
+                @media (min-width: $medium-screen) {
+                    @include span-columns(8);
+                    padding-top: $base-spacing * 2;
+                    padding-bottom: $base-spacing * 2;
+
+                    p {
+                        font-size: 1.2em;
+                    }
+
+                    & > a {
+                        font-size: 1.2em;
+                        margin-top: 0.8em;
+                    }
+                }
+
+                @media (min-width: $large-screen) {
+                    padding-left: $base-spacing * 2;
+                }
+            }
+        }
+
+        @media (min-width: $large-screen) {
+            padding-top: $base-spacing * 2;
+        }
+    }
+
+    fieldset {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        form {
+            @include outer-container;
+            padding: $base-spacing;
+
+            @media (min-width: $medium-screen) {
+                padding-top: $base-spacing * 2;
+            }
+        }
+    }
+}
+
+@import "print";

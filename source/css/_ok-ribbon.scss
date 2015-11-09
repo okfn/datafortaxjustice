@@ -1,0 +1,17 @@
+#ok-panel {
+    border-color: $dark-gray;
+}
+.ok-ribbon {
+    margin-top: -$base-spacing;
+    background-color: $dark-gray;
+    margin-bottom: $base-spacing;
+
+    @media (min-width: 576px) {
+        position: absolute;
+        right: 0;
+        background-color: transparent;
+    }
+    @media (min-width: $large-screen) {
+        margin-top: - $base-spacing * 2;
+    }
+}
