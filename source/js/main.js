@@ -1,5 +1,11 @@
 $(document).ready(function() {
     smoothScroll.init({
-        updateURL: false, 
+        updateURL: false,
+    });
+
+    $('a[rel="external"]')
+        .click( function() {
+        window.open( $(this).attr('href') );
+        return false;
     });
 });
