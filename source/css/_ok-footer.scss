@@ -17,6 +17,15 @@ html {
     fill: currentColor;
   }
 
+  img {
+    opacity: .7;
+  }
+  a:hover {
+      img {
+          opacity: 1;
+      }
+  }
+
   .wrapper {
     padding: $base-spacing;
     @include outer-container;
@@ -99,7 +108,6 @@ html {
         }
 
         img {
-          opacity: .7;
           height: 1.6em;
           padding: 1px;
 
