@@ -5,6 +5,10 @@
 @import "ok-ribbon";
 @import "ok-footer";
 
+html {
+  overflow-x: hidden;
+}
+
 body {
     & > header {
         background-color: $red;
@@ -105,6 +109,69 @@ body {
         @media (min-width: $large-screen) {
             padding-top: $base-spacing * 2;
         }
+    }
+
+    & > main {
+      background-color: #eeeeee;
+
+      & > section {
+        @include outer-container;
+
+        h2 {
+          padding: 24px 24px 0 24px;
+          font-size: rem(30);
+        }
+
+        &.members {
+          padding-bottom: $base-spacing;
+
+          .wrapper {
+            margin-left: 18px;
+            margin-right: 18px;
+            .member {
+              float: left;
+              background-color: #fff;
+              color: inherit;
+              text-align: center;
+              overflow: hidden;
+              line-height: 40px;
+              padding: 10px;
+              margin: 6px;
+              width: 250px;
+              height: 56px;
+
+              &.square {
+                width: 119px;
+                height: 124px;
+              }
+
+              & > span {
+                &.logo {
+                  display: block;
+                  height: 100%;
+                  text-indent: -9999px;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                }
+              }
+
+              &.has-role {
+                line-height: 17px;
+                padding-top: 13px;
+
+                .role {
+                  display: block;
+                  font-size: 10px;
+                  opacity: 0.7;
+                  line-height: 1;
+                  margin-top: 3px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     fieldset {

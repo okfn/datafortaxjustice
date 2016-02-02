@@ -16,3 +16,16 @@ title: Open Data for Tax Justice
         </div>
     </section>
 </header>
+
+<main>
+  <section class="members">
+    <h2>Members</h2>
+    <div class="wrapper">
+      <% data.members.each do |m| %>
+      <a class="member<%if m.ratio == 'square' %> square<% end %><%if m.role %> has-role<% end %>" <%if m.url %>href="<%= m.url %>" rel="external"<% end %>>
+        <span<%if m.logo %> class="logo" style="background-image: url(../img/members/<%= m.logo %>)"<% end %>><%= m.name %><%if m.role %><span class="role"><%= m.role %></span><% end %></span>
+      </a>
+      <% end %>
+    </div>
+  </section>
+</main>
