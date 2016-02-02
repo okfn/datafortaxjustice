@@ -23,11 +23,11 @@ body {
             $hastagheight: 140px;
             @include outer-container;
             position: relative;
-            @media (min-width: $medium-screen) {
+            @media (min-width: $large-screen) {
                 background-image: url(../img/man.svg);
                 background-repeat: no-repeat;
                 background-size: 31.7616% auto;
-                background-position: left $hastagheight;
+                background-position: $base-spacing $hastagheight;
             }
 
             .hashtag {
@@ -44,9 +44,11 @@ body {
                     display: none;
                 }
 
-                @media (min-width: $medium-screen) {
+                @media (min-width: $large-screen) {
                     @include span-columns(4);
                     padding: 0;
+                    position: relative;
+                    left: $base-spacing;
 
                     a {
                         display: block;
@@ -85,10 +87,15 @@ body {
                     text-transform: uppercase;
                 }
 
-                @media (min-width: $medium-screen) {
+                @media (min-width: $large-screen) {
                     @include span-columns(8);
-                    padding-top: $base-spacing * 2;
-                    padding-bottom: $base-spacing * 2;
+                    height: 380px;
+                    display: table;
+
+                    & > div {
+                      display: table-cell;
+                      vertical-align: middle;
+                    }
 
                     p {
                         font-size: 1.2em;
