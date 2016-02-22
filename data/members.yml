@@ -112,6 +112,8 @@
 -
   name: Finance Uncovered
   url: www.financeuncovered.org
+  logo: finance-uncovered.png
+  ratio: square
 -
   name: Caelainn Barr
   url: http://www.theguardian.com/profile/caelainn-barr
