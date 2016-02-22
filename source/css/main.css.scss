@@ -120,6 +120,7 @@ body {
 
     & > main {
       background-color: #eeeeee;
+      display: block; // for IE
 
       & > section {
         @include outer-container;
