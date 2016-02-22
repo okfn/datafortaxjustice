@@ -7,10 +7,6 @@
   url: www.savethechildren.org.uk
   logo: savethechildren.png
 -
-  name: Caelainn Barr
-  url: http://www.theguardian.com/international
-  type: individual
--
   name: Financial Transparency Coalition
   logo: ftc.png
 -
@@ -39,17 +35,9 @@
   logo: cbga.png
   ratio: square
 -
-  name: Charles Kenny
-  role: Senior Fellow, Center For Global Development
-  type: individual
--
   name: Code for Africa
   logo: cfafrica.png
   ratio: square
--
-  name: Gabriel Zucman
-  url: http://gabriel-zucman.eu/
-  type: individual
 -
   name: Global Alliance for Tax Justice
   logo: GATJ.png
@@ -65,10 +53,6 @@
   name: Global Witness
   logo: gw.png
   ratio: square
--
-  name: Attiya Waris
-  role: Professor of Law, U.Nairobi
-  type: individual
 -
   name: International Budget Partnership
   url: http://www.internationalbudget.org/
@@ -87,11 +71,6 @@
   url: http://littlesis.org/
   logo: littlesis.png
 -
-  name: Mar Cabra
-  role: Head of Data & Research, ICIJ
-  url: https://www.linkedin.com/profile/view?id=AAEAAASgig0BPrgUOA-9LYe5Gqobyjvsl0vOm48
-  type: individual
--
   name: Natural Resource Governance Institute
   url: http://www.resourcegovernance.org/
   logo: nrgi.png
@@ -104,14 +83,6 @@
   name: Oxfam
   url: http://oxfaminternational.org
   logo: oxfam.png
--
-  name: Simon Bowers
-  role: Senior Financial Reporter, The Guardian
-  type: individual
--
-  name: Sol Picciotto
-  role: Professor Emeritus, Lancaster University Law School and BEPS Monitoring Group
-  type: individual
 -
   name: Sunlight Foundation
   url: http://sunlightfoundation.com
@@ -137,10 +108,6 @@
   name: Transparency International
   url: https://www.transparency.org/
   logo: ti.png
--
-  name: Vijaya Ramachandran
-  role: Senior Fellow, Center For Global Development
-  type: individual
 -
   name: War on Want
   url: http://www.waronwant.org/
@@ -170,3 +137,43 @@
 -
   name: International Center for Journalists
   url: http://www.icfj.org/
+-
+  name: Caelainn Barr
+  url: http://www.theguardian.com/profile/caelainn-barr
+  role: Data Journalist, The Guardian
+  type: individual
+-
+  name: Simon Bowers
+  role: Senior Financial Reporter, The Guardian
+  url: http://www.theguardian.com/profile/simonbowers
+  type: individual
+-
+  name: Mar Cabra
+  role: Head of Data & Research, The International Consortium of Investigative Journalists (ICIJ)
+  url: https://www.linkedin.com/in/mar-cabra-8b9bb821
+  type: individual
+-
+  name: Charles Kenny
+  role: Senior Fellow, Center For Global Development
+  url: http://www.cgdev.org/expert/charles-kenny
+  type: individual
+-
+  name: Sol Picciotto
+  role: Professor Emeritus, Lancaster University Law School and BEPS Monitoring Group
+  url: http://www.lancaster.ac.uk/staff/lwasp/solhome.htm
+  type: individual
+-
+  name: Vijaya Ramachandran
+  role: Senior Fellow, Center For Global Development
+  url: http://www.cgdev.org/expert/vijaya-ramachandran
+  type: individual
+-
+  name: Attiya Waris
+  role: Senior Lecturer, Faculty of Law, University of Nairobi
+  url: https://profiles.uonbi.ac.ke/attiya/
+  type: individual
+-
+  name: Gabriel Zucman
+  role: Assistant Professor, Department of Economics, University of California, Berkeley
+  url: http://gabriel-zucman.eu/
+  type: individual
