@@ -80,39 +80,42 @@ html {
     }
 
     .footer-secondary-links {
-      @include media($large-screen) {
-        float: right;
-      }
 
       li {
         font-size: .8em;
         font-weight: 400;
       }
 
-      ul.footer-social {
-        margin-top: 1em;
-
+      ul {
+        margin-left: 0;
         @include media($large-screen) {
-          float: right;
-          margin-top: 0;
-        }
-
-        li {
           float: left;
-          font-size: 1em;
-          padding-right: .7em;
-
-          &:last-child {
-            padding-right: 0;
-          }
         }
+        &.footer-social {
+          margin-top: 1em;
 
-        img {
-          height: 1.6em;
-          padding: 1px;
+          @include media($large-screen) {
+            float: right;
+            margin-top: 0;
+          }
 
-          &:hover {
-            opacity: 1;
+          li {
+            float: left;
+            font-size: 1em;
+            padding-right: .7em;
+
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+
+          img {
+            height: 1.6em;
+            padding: 1px;
+
+            &:hover {
+              opacity: 1;
+            }
           }
         }
       }
@@ -122,12 +125,21 @@ html {
   hr {
     @include span-columns(12);
     border-color:$footer-disclaimer-color;
+    clear: both;
+
+    & + p {
+      @include span-columns(12);
+      font-size:rem(12);
+      color:$footer-disclaimer-color;
+      float: none;
+    }
   }
 
   p {
-    @include span-columns(12);
-    font-size:rem(12);
-    color:$footer-disclaimer-color;
+    font-size:rem(13);
+    @include media($large-screen) {
+      float: right;
+    }
   }
 
   .attribution {
