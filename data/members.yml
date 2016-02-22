@@ -88,9 +88,6 @@
   url: http://sunlightfoundation.com
   logo: SunlightFoundation.png
 -
-  name: Tactical Tech
-  url: https://tacticaltech.org/
--
   name: Tax Hack
   url: https://taxhack.wordpress.com/
   logo: taxhack.png
@@ -113,30 +110,8 @@
   url: http://www.waronwant.org/
   logo: wow.png
 -
-  name: ODI
--
-  name: IMF
--
-  name: World Bank
--
-  name: UNECA
--
-  name: JournalismFund.eu
--
-  name: ActionAid UK
--
   name: Finance Uncovered
   url: www.financeuncovered.org
--
-  name: Jesse Drucker
-  role: Investigative Reporter, Bloomberg News
-  url: http://www.bloomberg.com/bw/authors/1324-jesse-drucker
-  type: individual
--
-  name: ONE
--
-  name: International Center for Journalists
-  url: http://www.icfj.org/
 -
   name: Caelainn Barr
   url: http://www.theguardian.com/profile/caelainn-barr
