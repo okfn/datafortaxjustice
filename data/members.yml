@@ -9,6 +9,7 @@
 -
   name: Caelainn Barr
   url: http://www.theguardian.com/international
+  type: individual
 -
   name: Financial Transparency Coalition
   logo: ftc.png
@@ -40,6 +41,7 @@
 -
   name: Charles Kenny
   role: Senior Fellow, Center For Global Development
+  type: individual
 -
   name: Code for Africa
   logo: cfafrica.png
@@ -47,6 +49,7 @@
 -
   name: Gabriel Zucman
   url: http://gabriel-zucman.eu/
+  type: individual
 -
   name: Global Alliance for Tax Justice
   logo: GATJ.png
@@ -65,6 +68,7 @@
 -
   name: Attiya Waris
   role: Professor of Law, U.Nairobi
+  type: individual
 -
   name: International Budget Partnership
   url: http://www.internationalbudget.org/
@@ -86,6 +90,7 @@
   name: Mar Cabra
   role: Head of Data & Research, ICIJ
   url: https://www.linkedin.com/profile/view?id=AAEAAASgig0BPrgUOA-9LYe5Gqobyjvsl0vOm48
+  type: individual
 -
   name: Natural Resource Governance Institute
   url: http://www.resourcegovernance.org/
@@ -102,9 +107,11 @@
 -
   name: Simon Bowers
   role: Senior Financial Reporter, The Guardian
+  type: individual
 -
   name: Sol Picciotto
   role: Professor Emeritus, Lancaster University Law School and BEPS Monitoring Group
+  type: individual
 -
   name: Sunlight Foundation
   url: http://sunlightfoundation.com
@@ -133,6 +140,7 @@
 -
   name: Vijaya Ramachandran
   role: Senior Fellow, Center For Global Development
+  type: individual
 -
   name: War on Want
   url: http://www.waronwant.org/
@@ -156,6 +164,7 @@
   name: Jesse Drucker
   role: Investigative Reporter, Bloomberg News
   url: http://www.bloomberg.com/bw/authors/1324-jesse-drucker
+  type: individual
 -
   name: ONE
 -

@@ -132,7 +132,7 @@ body {
         &.members {
           padding-bottom: $base-spacing;
 
-          .wrapper {
+          .orgs {
             margin-left: 18px;
             margin-right: 18px;
             .member {
@@ -175,6 +175,30 @@ body {
                   margin-top: 3px;
                 }
               }
+            }
+          }
+
+          .individuals {
+            margin: $base-spacing;
+
+            li {
+              display: block;
+              margin-bottom: $small-spacing;
+
+              a {
+                display: inline-block;
+                color: inherit;
+
+                span {
+                  display: block;
+                  font-size: 0.8em;
+                }
+              }
+            }
+
+            @media (min-width: $large-screen) {
+              @include column-count(3);
+              @include column-gap($base-spacing);
             }
           }
         }

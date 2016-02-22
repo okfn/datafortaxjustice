@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   //grid
-  var $container = $('.members .wrapper');
+  var $container = $('.members .orgs');
   // init
   $container.packery({
     itemSelector: '.member',
