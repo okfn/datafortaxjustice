@@ -137,6 +137,7 @@ html {
 
   p {
     font-size:rem(13);
+    color: $footer-link-color;
     @include media($large-screen) {
       float: right;
     }
