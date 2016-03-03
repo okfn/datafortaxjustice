@@ -9,6 +9,7 @@
 -
   name: Financial Transparency Coalition
   logo: ftc.png
+  url: https://financialtransparency.org/
 -
   name: Web Foundation
   url: http://webfoundation.org
@@ -16,6 +17,7 @@
 -
   name: Christian Aid
   logo: ca.png
+  url: http://www.christianaid.org.uk/
 -
   name: Global Justice
   url: www.globaljustice.org.uk
@@ -25,6 +27,7 @@
   name: Eurodad
   logo: eurodad.png
   ratio: square
+  url: http://eurodad.org/
 -
   name: African Network of Centers for Investigative Reporting
   url: https://www.facebook.com/AfricaInvestigated
@@ -34,21 +37,26 @@
   name: CBGA, India
   logo: cbga.png
   ratio: square
+  url: http://www.cbgaindia.org/
 -
   name: Code for Africa
   logo: cfafrica.png
   ratio: square
+  url: http://www.codeforafrica.org/
 -
   name: Global Alliance for Tax Justice
   logo: GATJ.png
   ratio: square
+  url: http://www.globaltaxjustice.org/
 -
   name: Global Initiative for Financial Transparency
   logo: gift.png
   ratio: square
+  url: http://fiscaltransparency.net/
 -
   name: Global Integrity
   logo: gi.png
+  url: http://globalintegrity.org/
 -
   name: Global Witness
   logo: gw.png
