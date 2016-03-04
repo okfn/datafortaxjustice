@@ -139,9 +139,19 @@
   url: https://www.linkedin.com/in/mar-cabra-8b9bb821
   type: individual
 -
+  name: Petr Janský
+  role: Assistant Professor Charles University in Prague
+  url: http://ies.fsv.cuni.cz/en/staff/jansky
+  type: individual
+-
   name: Charles Kenny
   role: Senior Fellow, Center For Global Development
   url: http://www.cgdev.org/expert/charles-kenny
+  type: individual
+-
+  name: Richard Murphy
+  role: Professor of Practice in International Political Economy, City University London
+  url: http://www.taxresearch.org.uk/
   type: individual
 -
   name: Sol Picciotto
