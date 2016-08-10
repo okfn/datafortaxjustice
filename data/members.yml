@@ -4,7 +4,7 @@
   logo: somo.png
 -
   name: Save the Children (UK)
-  url: www.savethechildren.org.uk
+  url: http://www.savethechildren.org.uk/
   logo: savethechildren.png
 -
   name: Financial Transparency Coalition
@@ -20,7 +20,7 @@
   url: http://www.christianaid.org.uk/
 -
   name: Global Justice
-  url: www.globaljustice.org.uk
+  url: http://www.globaljustice.org.uk/
   logo: GlobalJusticeNow.png
   ratio: square
 -
@@ -120,7 +120,7 @@
   logo: wow.png
 -
   name: Finance Uncovered
-  url: www.financeuncovered.org
+  url: http://www.financeuncovered.org/
   logo: finance-uncovered.png
   ratio: square
 -
