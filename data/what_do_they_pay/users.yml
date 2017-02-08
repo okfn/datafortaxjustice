@@ -63,7 +63,11 @@ citizens:
     -
       As: Researcher at a Transparency NGO
       I: access a narrative account of how reports are produced
-      So: So that I can understand how to interpret the reports and any potential anomalies.
+      So: I can understand how to interpret the reports and any potential anomalies.
+    -
+      As: Researcher at a Transparency NGO
+      I: in addition to sharing data, also share methodologies for calculations (ensuring a clear separation between data and calculation results), and/or approaches used to analyse data, including the limitations of such methodologies
+      So: I can support the ongoing improvement of methodologies and of use and interpretation of the data.
     -
       As: Campaigner at a Development NGO
       I: look up quick facts, overview of the numbers
