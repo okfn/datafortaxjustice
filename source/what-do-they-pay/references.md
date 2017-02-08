@@ -14,7 +14,7 @@ Cobham, A. and Klees, S. (2016). *Global Taxation: Financing Education and the O
 
 Cohn, M. (2004). *User Stories Applied: For Agile Software Development*. Boston: Addison-Wesley Professional.
 
-Clausing, K. (2016). ‘’The Effect of Profit Shifting on the Corporate Tax Base in the United States and Beyond’, availabe at SSRN: [https://ssrn.com/abstract=2685442](https://ssrn.com/abstract=2685442) or [http://dx.doi.org/10.2139/ssrn.2685442](http://dx.doi.org/10.2139/ssrn.2685442).
+Clausing, K. (2016). *The Effect of Profit Shifting on the Corporate Tax Base in the United States and Beyond*. Availabe at: [https://ssrn.com/abstract=2685442](https://ssrn.com/abstract=2685442).
 
 Crivelli, E., R. de Mooij and M. Keen (2015). Base Erosion, Profit Shifting and
 
