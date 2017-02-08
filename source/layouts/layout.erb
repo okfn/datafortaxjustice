@@ -19,8 +19,8 @@
         <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,700,600' rel='stylesheet' type='text/css'>
         <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
         <link rel="stylesheet" href="//a.okfn.org/html/oki/panel/assets/css/frontend.css"/>
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-custom.js"></script>
+        <%= stylesheet_link_tag 'main' %>
+        <%= javascript_include_tag 'vendor/modernizr-custom' %>
     </head>
     <body>
         <div id="ok-panel" class="closed"><div class="container"><iframe src="//a.okfn.org/html/oki/panel/panel.html" scrolling="no"></iframe></div></div>
@@ -33,9 +33,9 @@
         <%= partial "ok-footer.html" %>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script>window.jQuery || document.write('<script src="<%= @baseurl %>/js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <%= javascript_include_tag 'plugins' %>
+        <%= javascript_include_tag 'main' %>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js"></script>
         <script src="//a.okfn.org/html/oki/panel/assets/js/frontend.js" type="text/javascript"></script>
 
