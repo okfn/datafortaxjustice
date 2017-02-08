@@ -6,7 +6,7 @@ Bowker, G. C., & Star, S. L. (2000). *Sorting Things Out: Classification and Its
 
 Cobham, A. (2014). Post-2015 Consensus: IFF Assessment. Copenhagen Consensus Center. Available at: [http://copenhagenconsensus.com/publication/post-2015-consensus-iff-assessment-cobham](http://copenhagenconsensus.com/publication/post-2015-consensus-iff-assessment-cobham)
 
-Cobham, A. & Gibson, L. (2016). Ending the Era of Tax Havens: Why the UK Government Must Lead the Way. *Oxfam Briefing Paper*. Available at:[ http://policy-practice.oxfam.org.uk/publications/ending-the-era-of-tax-havens-why-the-uk-government-must-lead-the-way-601121](http://policy-practice.oxfam.org.uk/publications/ending-the-era-of-tax-havens-why-the-uk-government-must-lead-the-way-601121). * *
+Cobham, A. & Gibson, L. (2016). Ending the Era of Tax Havens: Why the UK Government Must Lead the Way. *Oxfam Briefing Paper*. Available at:[ http://policy-practice.oxfam.org.uk/publications/ending-the-era-of-tax-havens-why-the-uk-government-must-lead-the-way-601121](http://policy-practice.oxfam.org.uk/publications/ending-the-era-of-tax-havens-why-the-uk-government-must-lead-the-way-601121).
 
 Cobham, A., & Janský, P. (2015). Measuring Misalignment: the Location of US Multinationals’ Economic Activity Versus the Location of their Profits. *International Centre for Tax and Development Working Paper Series *42. Available at: [http://www.ictd.ac/publication/2-working-papers/91-measuring-misalignment-the-location-of-us-multinationals-economic-activity-versus-the-location-of-their-profits](http://www.ictd.ac/publication/2-working-papers/91-measuring-misalignment-the-location-of-us-multinationals-economic-activity-versus-the-location-of-their-profits).
 
