@@ -289,6 +289,17 @@ main {
 
         p {
           font-family: $base-font-family;
+          word-wrap: break-word;
+        }
+      }
+    }
+
+    .references {
+      p {
+        font-size: 0.9em;
+
+        a {
+          word-wrap: break-word;
         }
       }
     }
