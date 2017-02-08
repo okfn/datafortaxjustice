@@ -1,0 +1,236 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+    & > header {
+        background-color: $red;
+        color: #fff;
+        padding-top: $base-spacing;
+        padding-bottom: $base-spacing;
+
+        a {
+            color: inherit;
+        }
+
+        $hastagheight: 140px;
+        & > section {
+            @include outer-container;
+            position: relative;
+            @media (min-width: $large-screen) {
+                background-image: url(../img/man.svg);
+                background-repeat: no-repeat;
+                background-size: 31.7616% auto;
+                background-position: $base-spacing $hastagheight;
+            }
+
+            .hashtag {
+                padding: 0 $base-spacing;
+                font-family: 'Source Code Pro', monospace;
+
+                a {
+                    color: $base-font-color;
+                    background-color: #fff;
+                    padding: $small-spacing*0.8 $small-spacing;
+                    display: inline-block;
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+
+                svg {
+                    display: none;
+                }
+
+
+            }
+
+            .intro {
+                padding: $base-spacing;
+
+                h1 {
+                    font-size: 50px;
+                    margin-top: 0;
+                    margin-bottom: 0.2em;
+                }
+
+                & > a {
+                    @extend button;
+                    background-color: $dark-gray;
+                    text-transform: uppercase;
+                }
+
+                @media (min-width: $large-screen) {
+                    @include span-columns(8);
+                    height: 380px;
+                    display: table;
+
+                    & > div {
+                      display: table-cell;
+                      vertical-align: middle;
+                    }
+
+                    p {
+                        font-size: 1.2em;
+                    }
+
+                    & > a {
+                        font-size: 1.2em;
+                        margin-top: 0.8em;
+                    }
+                }
+
+                @media (min-width: $large-screen) {
+                    padding-left: $base-spacing * 2;
+                }
+            }
+        }
+
+          &.banner {
+            padding-bottom: 0;
+
+            @media (min-width: $large-screen) {
+              padding-top: $base-spacing * 2;
+
+              .hashtag {
+                  @include span-columns(4);
+                  padding: 0;
+                  position: relative;
+                  left: $base-spacing;
+
+                  a {
+                      display: block;
+                      text-align: center;
+                      padding: 0 10px;
+                      height: $hastagheight;
+                      line-height: $hastagheight;
+                      font-size: 80px;
+                      letter-spacing: -2px;
+                  }
+                  svg {
+                      display: block;
+                      width: 100%;
+                      height: auto;
+                  }
+              }
+            }
+
+            & + main {
+              background-color: #eeeeee;
+            }
+        }
+    }
+
+    & > main {
+      background-color: #fff;
+      display: block; // for IE
+
+      & > section {
+        @include outer-container;
+
+        h2 {
+          padding: 24px 24px 0 24px;
+          font-size: rem(30);
+        }
+
+        &.members {
+          padding-bottom: $base-spacing;
+
+          h2 {
+            margin-top: 0;
+          }
+
+          .orgs {
+            margin-left: 18px;
+            margin-right: 18px;
+            .member {
+              float: left;
+              background-color: #fff;
+              color: inherit;
+              text-align: center;
+              overflow: hidden;
+              line-height: 40px;
+              padding: 10px;
+              margin: 6px;
+              width: 250px;
+              height: 56px;
+
+              &.square {
+                width: 119px;
+                height: 124px;
+              }
+
+              & > span {
+                &.logo {
+                  display: block;
+                  height: 100%;
+                  text-indent: -9999px;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                }
+              }
+
+              &.has-role {
+                line-height: 17px;
+                padding-top: 13px;
+
+                .role {
+                  display: block;
+                  font-size: 10px;
+                  opacity: 0.7;
+                  line-height: 1;
+                  margin-top: 3px;
+                }
+              }
+            }
+          }
+
+          .individuals {
+            margin: $base-spacing;
+
+            li {
+              display: block;
+              margin-bottom: $small-spacing;
+
+              a {
+                display: inline-block;
+                color: inherit;
+
+                span {
+                  display: block;
+                  font-size: 0.8em;
+                }
+              }
+            }
+
+            @media (min-width: $large-screen) {
+              @include column-count(3);
+              @include column-gap($base-spacing);
+            }
+          }
+        }
+      }
+    }
+
+    fieldset {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        form {
+            @include outer-container;
+            padding: $base-spacing;
+
+            @media (min-width: $medium-screen) {
+                padding-top: $base-spacing * 2;
+            }
+        }
+    }
+
+    .site-footer {
+        .tjn {
+            img {
+                height: 26px;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<ul>
+  <% data.what_do_they_pay.contents.each do |i| %>
+  <li>
+    <a href="#<%= i.id %>"><%= i.section %></a>
+    <% if i.sub %>
+    <ul>
+      <% i.sub.each do |s| %>
+      <li><a href="#<%= s.id %>"><%= s.section %></a></li>
+      <% end %>
+    </ul>
+    <% end %>
+  </li>
+  <% end %>
+</ul>

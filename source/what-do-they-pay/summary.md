@@ -1,0 +1,3 @@
+### Executive Summary
+
+This paper reviews the prospects for a global public database on the tax contributions and economic activities of multinational companies. It is divided into four main sections. Firstly, we present a set of user stories, questions, requirements, and scenarios of usage for a database. Secondly, we look at what kinds of information a public database could and should contain. Thirdly, we look at the opportunities and challenges of building a public database drawing on various existing information sources. Fourthly and finally, we suggest next steps for policy, advocacy, and technical work towards a public database.

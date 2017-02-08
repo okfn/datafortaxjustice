@@ -1,25 +1,46 @@
 table {
   @include font-feature-settings("kern", "liga", "tnum");
   border-collapse: collapse;
-  margin: $small-spacing 0;
-  table-layout: fixed;
+  margin: $small-spacing 0 $base-spacing 0;
   width: 100%;
 }
 
-th {
-  border-bottom: 1px solid darken($base-border-color, 15%);
-  font-weight: 600;
-  padding: $small-spacing 0;
-  text-align: left;
-}
-
+th,
 td {
   border-bottom: $base-border;
-  padding: $small-spacing 0;
+  padding: $small-spacing;
+  border-right: $base-border;
+  font-size: 0.9em;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+th {
+  font-weight: 600;
+  text-align: left;
 }
 
 tr,
 td,
 th {
   vertical-align: middle;
+}
+
+thead {
+  th {
+    border-color: $dark-gray;
+    background-color: $dark-gray;
+    color: #fff;
+  }
+}
+
+tbody {
+  th,
+  td {
+    &:empty {
+      border-bottom: none;
+    }
+  }
 }

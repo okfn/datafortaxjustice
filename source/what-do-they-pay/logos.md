@@ -1,0 +1,5 @@
+- ![Tax Justice Network](../img/members/tjn.png)
+- ![#OD4TJ](../img/logo.png)
+- ![Open Knowledge International](../img/oki-logo.png)
+- ![Financial Transparency Coalition](../img/members/ftc.png)
+- ![Omidya Network](../img/on-logo.png)

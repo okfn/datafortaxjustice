@@ -16,7 +16,7 @@ h6 {
   font-family: $heading-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: $small-spacing 0 $small-spacing/2 0;
 }
 
 p {
@@ -52,4 +52,14 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+sub,
+sup {
+  font-size: 60%;
+  font-family: 'Source Code Pro', monospace;
+}
+
+blockquote {
+  font-style: italic;
 }

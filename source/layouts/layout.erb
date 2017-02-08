@@ -17,6 +17,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,700,600' rel='stylesheet' type='text/css'>
+        <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet">
         <link rel="stylesheet" href="//a.okfn.org/html/oki/panel/assets/css/frontend.css"/>
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-custom.js"></script>
@@ -39,6 +40,10 @@
         <script src="//a.okfn.org/html/oki/panel/assets/js/frontend.js" type="text/javascript"></script>
 
         <script>
+          <% if current_page.data.js %>
+            <%= current_page.data.js %>
+
+          <% end %>
             var _gaq=[['_setAccount','UA-48682838-9'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';

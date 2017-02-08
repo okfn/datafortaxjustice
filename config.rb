@@ -47,6 +47,12 @@
 #   end
 # end
 
+helpers do
+  def markdownify(content)
+    Tilt['markdown'].new { content }.render
+  end
+end
+
 set :css_dir, 'css'
 
 set :js_dir, 'js'

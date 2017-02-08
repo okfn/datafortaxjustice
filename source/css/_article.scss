@@ -1,0 +1,417 @@
+main {
+  & > article {
+    @include outer-container;
+    padding: $base-spacing;
+
+    @media (min-width: $medium-screen) {
+      font-size: 1.1em;
+    }
+
+    @media (min-width: $large-screen) {
+      font-size: 1.2em;
+    }
+
+    h1, h2, h3, h4 {
+      clear: both;
+    }
+
+    h1 {
+      font-size: 4.5em;
+
+      & + h2 {
+        margin-top: -0.3em;
+      }
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      position: relative;
+      margin-top: 2em;
+
+      &:before {
+        content: '\00a0';
+        width: 0.3em;
+        background-color: $red;
+        position: absolute;
+        left: -0.83em;
+      }
+    }
+
+    h4 {
+      font-size: 1.5em;
+    }
+
+    h5 {
+      font-size: 1.3em;
+    }
+
+    h6 {
+      font-size: 1.1em;
+    }
+
+    header {
+      position: relative;
+    }
+
+    .meta {
+      font-size: 0.9em;
+
+      ul {
+        margin-top: 2em;
+        padding-top: 0.5em;
+        border-top: solid 1px rgba($dark-gray,0.5);
+
+        dd {
+          opacity: 0.8;
+        }
+
+        @media (min-width: $medium-screen) {
+          @include outer-container;
+
+          li {
+            @include span-columns(4);
+          }
+        }
+      }
+
+      .date {
+        position: absolute;
+        top: -2em;
+        left: 0;
+        opacity: 0.8;
+      }
+    }
+
+    .summary {
+      background-color: $lighter-gray;
+      position: relative;
+      padding-top: $base-spacing;
+      padding-bottom: $base-spacing;
+      margin-top: 2.5em;
+
+      h3 {
+        margin-top: 0;
+      }
+
+      &:before {
+        content: '';
+        width: $base-spacing;
+        position: absolute;
+        left: - $base-spacing;
+        top: 0;
+        bottom: 0;
+        background-color: $lighter-gray;
+      }
+
+      &:after {
+        content: '';
+        width: $base-spacing;
+        position: absolute;
+        right: - $base-spacing;
+        top: 0;
+        bottom: 0;
+        background-color: $lighter-gray;
+      }
+
+      .logos {
+        margin-top: $base-spacing;
+
+        li {
+          text-align: center;
+          margin-top: $base-spacing;
+          margin-bottom: $base-spacing;
+          background-color: #fff;
+
+          img {
+            margin-top: 0.3em;
+            max-width: 90%;
+            max-height: 3em;
+          }
+        }
+
+        @media (min-width: $medium-screen) {
+          display: table;
+          width: 100%;
+          table-layout: fixed;
+
+          ul {
+            display: table-row;
+
+            li {
+              display: table-cell;
+              vertical-align: middle;
+              padding: $small-spacing;
+              border-left: solid 10px $lighter-gray;
+              border-right: solid 10px $lighter-gray;
+
+              &:first-child {
+                border-left: none;
+              }
+              &:last-child {
+                border-right: none;
+              }
+
+              img {
+                max-height: 3em;
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .toc {
+      a {
+        color: inherit;
+      }
+
+      li {
+        font-size: 0.95em;
+        font-weight: bold;
+        margin-top: $small-spacing;
+        margin-bottom: $small-spacing;
+
+        li {
+          font-weight: normal;
+          margin-left: $base-spacing;
+        }
+      }
+    }
+
+    .acknowledgements {
+      ul {
+        @include column-count(3);
+        @include column-gap(30px);
+        @include column-width(12em);
+        font-size: 0.8em;
+        margin-bottom: $base-spacing;
+
+        li {
+          -webkit-column-break-inside: avoid;
+                    page-break-inside: avoid;
+                         break-inside: avoid;
+          }
+
+        dl {
+          margin-top: 0;
+
+          dt {
+            margin-top: 0;
+          }
+          dd {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    .content {
+      ul,
+      ol {
+        margin-left: $base-spacing;
+      }
+      ul {
+        li {
+          list-style: initial;
+        }
+      }
+      ol {
+        list-style: decimal;
+      }
+
+
+      .image {
+        display: block;
+        margin-top: $base-spacing;
+        margin-bottom: $base-spacing;
+
+        img {
+          display: block;
+        }
+
+        em {
+          display: block;
+          font-size: 0.8em;
+        }
+
+        @media (min-width: $medium-screen) {
+          width: 50%;
+          float: left;
+          margin: $small-spacing $base-spacing $base-spacing (-$base-spacing);
+        }
+
+        &.fullwidth {
+          @media (min-width: $large-screen) {
+            float: none;
+            width: auto;
+            margin-left: -$base-spacing;
+            margin-right: -$base-spacing;
+          }
+        }
+      }
+
+      .user-stories {
+        p {
+          color: $medium-gray;
+
+          strong {
+            color: $blue;
+          }
+          em {
+            color: $dark-gray;
+            font-style: normal;
+          }
+          b {
+            color: $green;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+
+    .footnotes {
+      margin-top: $base-spacing;
+      margin-bottom: $base-spacing;
+      padding-top: $base-spacing;
+      padding-bottom: $base-spacing;
+      border-top: solid 1px rgba($dark-gray,0.5);
+      border-bottom: solid 1px rgba($dark-gray,0.5);
+      clear: both;
+
+      li {
+        font-size: 0.7em;
+        font-family: 'Source Code Pro', monospace;
+
+        p {
+          font-family: $base-font-family;
+        }
+      }
+    }
+  }
+}
+
+.what-do-they-pay {
+
+  .comparison-of-data-fields {
+    .toggle-data {
+      display: none;
+
+      .js & {
+        border: solid 2px $light-gray;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        color: $dark-gray;
+        padding: $small-spacing/2 $base-spacing $small-spacing/2 ($base-spacing+2em);
+        position: relative;
+        cursor: pointer;
+
+        @media (min-width: $medium-screen) {
+          float: right;
+        }
+
+        &:before {
+          content: '';
+          background-color: $light-gray;
+          display: block;
+          width: 2em;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+        }
+
+        &.off {
+          border-color: $blue;
+          padding: $small-spacing/2 ($base-spacing+2em) $small-spacing/2 $base-spacing;
+
+          &:before {
+            background-color: $blue;
+            left: auto;
+            right: 0;
+          }
+        }
+
+        &.active {
+          display: block;
+        }
+      }
+    }
+    table {
+      tbody {
+        th {
+          width: 28%;
+        }
+        td {
+          width: 12%;
+          text-align: center;
+          background-color: $red;
+          line-height: 1.2;
+          height: 4.5em;
+          padding-top: $small-spacing/2;
+          padding-bottom: $small-spacing/2;
+
+          &.ideal {
+            background-color: inherit;
+            svg {
+              fill: $green;
+            }
+          }
+
+          &.related {
+            background-color: inherit;
+            svg {
+              fill: $yellow;
+            }
+          }
+        }
+
+        svg {
+          width: 32px;
+          height: 32px;
+          fill: #fff;
+          padding-top: 0.3em;
+        }
+
+        span {
+          display: none;
+          font-size: 0.8em;
+        }
+      }
+
+      &.detailed,
+      tbody tr:hover {
+        .ideal,
+        .related {
+          svg {
+            display: none;
+          }
+          span {
+            display: block;
+          }
+        }
+        .ideal {
+          background: $green;
+          color: #fff;
+        }
+        .related {
+          background: $yellow;
+        }
+      }
+      tbody tr:hover {
+        th {
+          background-color: $light-gray;
+        }
+      }
+      &.detailed tbody tr:hover {
+        th {
+          background-color: inherit;
+        }
+      }
+    }
+  }
+}

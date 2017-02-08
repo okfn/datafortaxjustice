@@ -12,7 +12,12 @@
         right: 0;
         background-color: transparent;
     }
-    @media (min-width: $large-screen) {
-        margin-top: - $base-spacing * 2;
+}
+
+.banner {
+    #ok-panel-wrapper:not([data-breakpoint*='px'])>.ok-ribbon {
+        @media (min-width: $large-screen) {
+            margin-top: - $base-spacing * 2;
+        }
     }
 }
