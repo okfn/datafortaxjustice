@@ -98,6 +98,9 @@ This report would not have been possible without input from and discussion with 
 - Francis Weyzig
 : Policy Advisor (Tax Justice and Economic Inequality), Oxfam Novib
 
+- Lisa Wise
+: Head of Inclusive Development, Save the Children UK
+
 - Dariusz Wojcik
 : Professor of Economic Geography, St Peter's College, University of Oxford
 
