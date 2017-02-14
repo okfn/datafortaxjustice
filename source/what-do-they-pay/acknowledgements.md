@@ -80,7 +80,7 @@ This report would not have been possible without input from and discussion with 
 - Indra Römgens
 : Researcher, Centre for Research on Multinational Corporations (SOMO)
 
-- Anton Ruhling
+- Anton Rühling
 : Programme Manager, OpenOil
 
 - Cécile Schilis-Gallego

@@ -1,91 +1,91 @@
 citizens:
   stories:
     -
-      As: Politically Active Citizen in the Global North
+      As: Politically active citizen in the Global North
       I: understand how much tax shops in my high street are paying in different countries
       So: I can gather some numbers to use in a petition or letter to my political representative; and/or use the comparative data to inform decisions to buy/boycott particular MNEs of which I may be a customer.
     -
-      As: Tax Justice Campaigner in the Global South
+      As: Tax justice campaigner in the Global South
       I: evaluate the overall misalignment of profits of my country countries, and to compare and rank the extent of misalignment of each of the multinationals operating in my country
       So: I can create advocacy materials and resources for our campaigning work.
     -
-      As: Tax Justice Campaigner in the Global South
+      As: Tax justice campaigner in the Global South
       I: understand which companies might be benefiting from tax holidays and other incentives
       So: I can raise public awareness about this and encourage my government to take action through our campaigning activities.
     -
-      As: Concerned Citizen of a Tax Haven
+      As: Concerned citizen of a tax haven
       I: find out about the misalignments of profits of corporate subsidiaries based in my country
       So: I can understand the nature of multinational profit-shifting facilitated by my country, and decide who to vote for in local elections.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: upload data that I have generated and cleaned up for an investigation
       So: others can build on and use the data after the investigation - so that it won’t be wasted.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: be able to conduct a crowdsourcing initiative to collect and check data on multinationals with volunteers from my network
       So: I can coordinate with others around the collection of information about specific companies, sectors or regions.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: have a way to embargo data
       So: other organisations don’t analyse or publish about our data before we’re finished.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: have a way to document where uploaded data comes from, how it was transformed, issues that came up and decisions that were taken
       So: others who are using the data understand our assumptions and working.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: have access to easily usable open data that has been integrated from multiple sources
       So: I don’t have to do additional work to clean and harmonise data.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: access the reporting requirements and legal definitions used in data
       So: I understand how the data was generated and what it does and does not include.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: be credited for data that we have added
-      So: We have public recognition for sharing our data with others.
+      So: we have public recognition for sharing our data with others.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: compare and contextualise my analysis with reference to other sources of information
-      So: I can can check the results of our work and see if our results look right.
+      So: I can check the results of our work and see if our results look right.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: see quick visualisations of key ratios and figures
       So: I can explore data on the web without having to download and visualise offline.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: see the full addresses of subsidiaries
       So: I can see whether they are in a sub-jurisdiction that acts as a tax haven (e.g. Delaware).
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: see the significance thresholds used to define banks’ scope of consolidation
-      So: Ensure the comparability of data from different legal entities.
+      So: we can ensure the comparability of data from different legal entities.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: access a narrative account of how reports are produced
       So: I can understand how to interpret the reports and any potential anomalies.
     -
-      As: Researcher at a Transparency NGO
+      As: Researcher at a transparency NGO
       I: in addition to sharing data, also share methodologies for calculations (ensuring a clear separation between data and calculation results), and/or approaches used to analyse data, including the limitations of such methodologies
       So: I can support the ongoing improvement of methodologies and of use and interpretation of the data.
     -
-      As: Campaigner at a Development NGO
+      As: Campaigner at a development NGO
       I: look up quick facts, overview of the numbers
       So: I have killer facts for advocacy meetings.
     -
-      As: Campaigner at a Development NGO
+      As: Campaigner at a development NGO
       I: compare amounts of taxes paid in different countries
       So: I can argue for changes in the national legislation to improve tax collection.
     -
-      As: Campaigner at a Development NGO
+      As: Campaigner at a development NGO
       I: check a multinational’s economic contribution to a given country
       So: I can fact check our campaigning materials.
     -
-      As: Policy Manager in a Development NGO
+      As: Policy manager in a development NGO
       I: analyse company-level and sectoral data across different countries
       So: I can assess where companies may be using tax havens to reduce their tax liabilities in developing countries.
     -
-      As: Economist Working on Tax Policy in the Mining and Petroleum Sectors at an International NGO
+      As: Economist working on tax policy in the mining and petroleum sectors at an international NGO
       I: use country-by-country reports of global mining and petroleum companies to complement the project-level reporting submitted to financial markets regulators in the EU, the USA and Canada
       So: I would be able to analyze if resource rich countries get a fair share of resource rents.
 
@@ -107,63 +107,63 @@ citizens:
 journalists:
   stories:
     -
-      As: Local or Beat Reporter
+      As: Local or beat reporter
       I: understand how many employees work in a given country and the profit per employee
       So: I can provide context (e.g. for labor dispute stories) and estimate the economic presence of a company in a country.
     -
-      As: Investigative Reporter
+      As: Investigative reporter
       I: use the data to understand corporate ownership structures and economic activities of subsidiaries
-      So: I can trace ownership and fact-check a company structure.
+      So: I can trace ownership and fact check a company structure.
     -
-      As: Investigative Reporter
+      As: Investigative reporter
       I: download all names of subsidiaries of a company in a country
-      So: I can trace ownership and fact-check a company structure - as well as combining this with data from other sources for my reportage.
+      So: I can trace ownership and fact check a company structure - as well as combining this with data from other sources for my reportage.
     -
-      As: Data Journalist
+      As: Data journalist
       I: search and query by country, continent and corporate groups
       So: I can visualize the presence of a group across the globe.
     -
-      As: Data Journalist
+      As: Data journalist
       I: evaluate the overall misalignment of profits by multinational and by country and to rank these accordingly
       So: I can understand the scale of multinational tax avoidance globally and/or in a particular country, identify the most and least aggressive multinationals.
     -
-      As: Data Journalist
+      As: Data journalist
       I: download a company structure as open data or via an API
       So: I can cross-reference the data with other available information sources. For example, if I’m trying to find out if any company from a given corporate group appears in a leaked database.
     -
-      As: Data Journalist
+      As: Data journalist
       I: add data from annual company reports
       So: I can get see trends over time in company accounts - to identity changes or patterns. And so that I have a place to collect information on companies for which CBCR reports are not yet available.
     -
-      As: Financial Journalist
+      As: Financial journalist
       I: see market share and sales by a company in a given country
       So: I can provide market analysis.
     -
-      As: Financial Journalist
+      As: Financial journalist
       I: See ratios such as profit per employee, sales per employee, the share each jurisdiction represent for the whole group
       So: I can quickly get a sense of key indicators for my reporting.
     -
-      As: Financial Journalist
+      As: Financial journalist
       I: see comparisons such as local activities in context of global for one company, tax paid by small vs. big companies in one country
       So: I can compare corporate tax contributions by company, sector and country.
     -
-      As: Financial Journalist
+      As: Financial journalist
       I: see profiles of different companies
       So: I can provide context for merger and acquisition stories.
     -
-      As: Professional Trade Press
+      As: Professional trade press
       I: see which firms clients are most active in tax havens
       So: I can provide up to date commentary on changing patterns of professional practice.
     -
-      As: Trade Press Journalist
+      As: Trade press journalist
       I: report on the recent filings of sector leaders
-      So: My readers keep subscribing - and have good market intelligence.
+      So: my readers keep subscribing - and have good market intelligence.
     -
-      As: Offshore Journalist
+      As: Offshore journalist
       I: report on changing patterns of usage of tax havens
       So: I can comment on the likely trends in the economy of a jurisdiction based on real data.
     -
-      As: Offshore Journalist
+      As: Offshore journalist
       I: report on corporate gains and losses for the jurisdiction not otherwise revealed
       So: I can keep local markets informed of opportunities.
 
@@ -202,19 +202,19 @@ researchers:
       I: view macroeconomic aggregated, anonymized low-grade datasets derived from CBCR
       So: I can use this in the service of macro-level analysis of basic organizational features of MNEs and the global economy.
     -
-      As: Political Economist
+      As: Political economist
       I: view trends in the data
       So: I can assess the impact of regulation on corporate behaviour.
     -
-      As: Political Economist
+      As: Political economist
       I: undertake ratio analysis on the data using the logic of unitary taxation
       So: I can assess the likely scale of base erosion and profit shifting.
     -
-      As: Economic Geographer
+      As: Economic geographer
       I: use data to map international economic activity in order to provide picture of global economic activity, for qualitative analysis
       So: I can better understand the relationship between "real" and paper (legal-abstract) global economy.
     -
-      As: Economic Geographer
+      As: Economic geographer
       I: use data for macro-level, and industry, firm/value-chain, production-network-level case studies
       So: I can study global value chains, production networks, etc.
     -
@@ -236,27 +236,27 @@ researchers:
 companies:
   stories:
     -
-      As: Due Diligence Officer / Investor
+      As: Due diligence officer / investor
       I: know the source of the data
       So: I can get my legal department to let me use this.
     -
-      As: Know Your Customer team leader / Compliance Officer
+      As: Know your customer team leader / compliance officer
       I: get a full dump of the data or reliable API access
       So: I can combine this with data in my internal systems, without exposing my data.
     -
-      As: Government Relations Officer
+      As: Government relations officer
       I: check our corporate information in the database
       So: I’m aware of any reputational risk.
     -
-      As: Regional Manager
+      As: Regional manager
       I: understand my competitors’ positions by region and country
       So: I can plan my strategy.
     -
-      As: Corporate Legal Officer
+      As: Corporate legal officer
       I: understand whether potential business partners are using aggressive tax avoidance strategies, and to understand their corporate structure
       So: I can undertake due diligence (including comparing with what the firm has reported to us).
     -
-      As: Service Provider to Corporations
+      As: Service provider to corporations
       I: understand the "on the ground" presence of corporations in different countries
       So: I can upsell them on our services.
     -
@@ -335,27 +335,27 @@ companies:
 institutions:
   stories:
     -
-      As: Data Analyst at Tax Office in France
+      As: Data analyst at tax office in France
       I: evaluate the overall misalignment of profits of my country and to compare that to other countries
       So: I can understand the nature and scale of multinational tax avoidance in my country, and how our tax authority performs compares to others.
     -
-      As: Data Analyst at Tax Office in France
+      As: Data analyst at tax office in France
       I: compare and rank the extent of misalignment of each of the multinationals operating in my country
       So: I can identify the most high-risk taxpayers in order to select these multinationals for additional scrutiny.
     -
-      As: Tax Official in Zambia
+      As: Tax official in Zambia
       I: see what taxes the corporations have been paying in my country as against other countries, and against their competitors.
       So: I can target tax investigations.
     -
-      As:  Tax Official in Zambia
+      As:  Tax official in Zambia
       I: know if companies have often revised or re-filed their tax records
       So: I can know how to handle their reporting.
     -
-      As: World Bank Official
+      As: World Bank official
       I: provide analysis to client governments that can help them to improve their effective tax rate
       So: we hit our goals of providing policy support and improving development outcomes.
     -
-      As: Due Diligence Officer at International Development Agency
+      As: Due diligence officer at international development agency
       I: perform tax rate due diligence on organisations we are funding
       So: we can implement a policy of only granting to tax-compliant organisations.
     -
