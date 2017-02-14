@@ -18,9 +18,9 @@
 - section: 2. What Should A Public Database Contain?
   id: what-should-a-public-database-contain
   sub:
-    - section: "Country by Country Reporting: Civil Society Proposals and the OECD Standard"
+    - section: "Country-by-Country Reporting: Civil Society Proposals and the OECD Standard"
       id: country-by-country-reporting-civil-society-proposals-and-the-oecd-standard
-    - section: Beyond Country by Country Reporting Data?
+    - section: Beyond Country-by-Country Reporting Data?
       id: beyond-country-by-country-reporting-data
     - section: Beneficial Ownership and Other Company Information
       id: beneficial-ownership-and-other-company-information
