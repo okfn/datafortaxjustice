@@ -53,7 +53,7 @@ body {
                     margin-bottom: 0.2em;
                 }
 
-                & > a {
+                & > div > a {
                     @extend button;
                     background-color: $dark-gray;
                     text-transform: uppercase;
