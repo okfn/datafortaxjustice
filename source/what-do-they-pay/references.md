@@ -8,17 +8,15 @@ Cobham, A. (2014). Post-2015 Consensus: IFF Assessment. Copenhagen Consensus Cen
 
 Cobham, A. & Gibson, L. (2016). Ending the Era of Tax Havens: Why the UK Government Must Lead the Way. *Oxfam Briefing Paper*. Available at:[ http://policy-practice.oxfam.org.uk/publications/ending-the-era-of-tax-havens-why-the-uk-government-must-lead-the-way-601121](http://policy-practice.oxfam.org.uk/publications/ending-the-era-of-tax-havens-why-the-uk-government-must-lead-the-way-601121).
 
-Cobham, A., & Janský, P. (2015). Measuring Misalignment: the Location of US Multinationals’ Economic Activity Versus the Location of their Profits. *International Centre for Tax and Development Working Paper Series *42. Available at: [http://www.ictd.ac/publication/2-working-papers/91-measuring-misalignment-the-location-of-us-multinationals-economic-activity-versus-the-location-of-their-profits](http://www.ictd.ac/publication/2-working-papers/91-measuring-misalignment-the-location-of-us-multinationals-economic-activity-versus-the-location-of-their-profits).
+Cobham, A., & Janský, P. (2015). Measuring Misalignment: the Location of US Multinationals’ Economic Activity Versus the Location of their Profits. *International Centre for Tax and Development Working Paper Series* 42. Available at: [http://www.ictd.ac/publication/2-working-papers/91-measuring-misalignment-the-location-of-us-multinationals-economic-activity-versus-the-location-of-their-profits](http://www.ictd.ac/publication/2-working-papers/91-measuring-misalignment-the-location-of-us-multinationals-economic-activity-versus-the-location-of-their-profits).
 
 Cobham, A. and Klees, S. (2016). *Global Taxation: Financing Education and the Other Sustainable Development Goals*. New York: International Commission on Financing Global Education Opportunity: [http://report.educationcommission.org/download/817/](http://report.educationcommission.org/download/817/).
 
 Cohn, M. (2004). *User Stories Applied: For Agile Software Development*. Boston: Addison-Wesley Professional.
 
-Clausing, K. (2016). *The Effect of Profit Shifting on the Corporate Tax Base in the United States and Beyond*. Availabe at: [https://ssrn.com/abstract=2685442](https://ssrn.com/abstract=2685442).
+Clausing, K. (2016). *The Effect of Profit Shifting on the Corporate Tax Base in the United States and Beyond*. Available at: [https://ssrn.com/abstract=2685442](https://ssrn.com/abstract=2685442).
 
-Crivelli, E., R. de Mooij and M. Keen (2015). Base Erosion, Profit Shifting and
-
-Developing Countries. IMF Working Paper 15/118: [https://www.imf.org/external/pubs/ft/wp/2015/wp15118.pdf](https://www.imf.org/external/pubs/ft/wp/2015/wp15118.pdf).
+Crivelli, E., R. de Mooij and M. Keen (2015). Base Erosion, Profit Shifting and Developing Countries. IMF Working Paper 15/118: [https://www.imf.org/external/pubs/ft/wp/2015/wp15118.pdf](https://www.imf.org/external/pubs/ft/wp/2015/wp15118.pdf).
 
 Davies, T., & Gower, R. (2016). Letting the Public in Opportunities and Standards for Open Data on Beneficial Ownership, Country-by-Country Reporting and Automatic Exchange of Financial Information. The Financial Transparency Coalition. Available at: [https://financialtransparency.org/reports/letting-the-public-in/](https://financialtransparency.org/reports/letting-the-public-in/)
 
@@ -52,7 +50,7 @@ Murphy, R. (2003). *A Proposed International Accounting Standard: Reporting Turn
 
 Murphy, R. (2012). *Country-by-Country Reporting: Accounting for globalisation locally*. London: Tax Justice Network. Available at: [http://www.taxresearch.org.uk/Documents/CBC2012.pdf](http://www.taxresearch.org.uk/Documents/CBC2012.pdf).
 
-Murphy, R., Christiansen, J. & Kimmis, J. (2005). *Tax Us if You Can: The True Story of a Global Failure*. London: Tax Justice Network. Available at: [http://www.taxjustice.net/cms/upload/pdf/tuiyc_-_eng_-_web_file.pdf](http://www.taxjustice.net/cms/upload/pdf/tuiyc_-_eng_-_web_file.pdf)
+Murphy, R., Christensen, J. & Kimmis, J. (2005). *Tax Us if You Can: The True Story of a Global Failure*. London: Tax Justice Network. Available at: [http://www.taxjustice.net/cms/upload/pdf/tuiyc_-_eng_-_web_file.pdf] (http://www.taxjustice.net/cms/upload/pdf/tuiyc_-_eng_-_web_file.pdf)
 
 PwC (2013). Tax Transparency and Country-by-Country Reporting: An Ever Changing Landscape. Available at: [https://www.pwc.com/gx/en/tax/publications/assets/pwc_tax_transparency_and-country_by_country_reporting.pdf](https://www.pwc.com/gx/en/tax/publications/assets/pwc_tax_transparency_and-country_by_country_reporting.pdf)
 
@@ -60,4 +58,4 @@ Rogers, R. (2013). *Digital Methods*. Cambridge, MA: MIT Press.
 
 Seabrooke, L., & Wigan, D. (2015). Powering Ideas Through Expertise: Professionals in Global Tax Battles. *Journal of European Public Policy*, 0(0), 1–18.
 
-Ting, A. (2014). iTax - Apple's International Tax Structure and the Double Non-Taxation Issue. *British Tax Review *1. Available at: [https://ssrn.com/abstract=2411297](https://ssrn.com/abstract=2411297).
+Ting, A. (2014). iTax - Apple's International Tax Structure and the Double Non-Taxation Issue. *British Tax Review* 1. Available at: [https://ssrn.com/abstract=2411297](https://ssrn.com/abstract=2411297).
