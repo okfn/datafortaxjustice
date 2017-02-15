@@ -50,7 +50,7 @@ Murphy, R. (2003). *A Proposed International Accounting Standard: Reporting Turn
 
 Murphy, R. (2012). *Country-by-Country Reporting: Accounting for globalisation locally*. London: Tax Justice Network. Available at: [http://www.taxresearch.org.uk/Documents/CBC2012.pdf](http://www.taxresearch.org.uk/Documents/CBC2012.pdf).
 
-Murphy, R., Christensen, J. & Kimmis, J. (2005). *Tax Us if You Can: The True Story of a Global Failure*. London: Tax Justice Network. Available at: [http://www.taxjustice.net/cms/upload/pdf/tuiyc_-_eng_-_web_file.pdf] (http://www.taxjustice.net/cms/upload/pdf/tuiyc_-_eng_-_web_file.pdf)
+Murphy, R., Christensen, J. & Kimmis, J. (2005). *Tax Us if You Can: The True Story of a Global Failure*. London: Tax Justice Network. Available at: [http://www.taxjustice.net/cms/upload/pdf/tuiyc_-_eng_-_web_file.pdf](http://www.taxjustice.net/cms/upload/pdf/tuiyc_-_eng_-_web_file.pdf)
 
 PwC (2013). Tax Transparency and Country-by-Country Reporting: An Ever Changing Landscape. Available at: [https://www.pwc.com/gx/en/tax/publications/assets/pwc_tax_transparency_and-country_by_country_reporting.pdf](https://www.pwc.com/gx/en/tax/publications/assets/pwc_tax_transparency_and-country_by_country_reporting.pdf)
 
