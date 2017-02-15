@@ -1,7 +1,13 @@
 <h4 id="citizens-and-civil-society-groups">Citizens and Civil Society Groups</h4>
 <div class="user-stories">
   <% data.what_do_they_pay.users.citizens.stories.each do |s| %>
-  <p>As a <strong><%= s.As %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
+  <% if s.An
+     as = s.An
+   else
+     as = s.A
+   end
+  %>
+  <p>As a<% if s.An %>n<% end %> <strong><%= as %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
   <% end %>
 </div>
 <p>
@@ -16,7 +22,13 @@
 <h4 id="journalists-and-media-organisations">Journalists and Media Organisations</h4>
 <div class="user-stories">
   <% data.what_do_they_pay.users.journalists.stories.each do |s| %>
-  <p>As a <strong><%= s.As %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
+  <% if s.An
+     as = s.An
+   else
+     as = s.A
+   end
+  %>
+  <p>As a<% if s.An %>n<% end %> <strong><%= as %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
   <% end %>
 </div>
 <p>
@@ -31,7 +43,13 @@
 <h4 id="researchers-and-academics">Researchers and Academics</h4>
 <div class="user-stories">
   <% data.what_do_they_pay.users.researchers.stories.each do |s| %>
-  <p>As a <strong><%= s.As %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
+  <% if s.An
+     as = s.An
+   else
+     as = s.A
+   end
+  %>
+  <p>As a<% if s.An %>n<% end %> <strong><%= as %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
   <% end %>
 </div>
 <p>
@@ -46,7 +64,13 @@
 <h4 id="companies-and-investors">Companies and Investors</h4>
 <div class="user-stories">
   <% data.what_do_they_pay.users.companies.stories.each do |s| %>
-  <p>As a <strong><%= s.As %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
+  <% if s.An
+     as = s.An
+   else
+     as = s.A
+   end
+  %>
+  <p>As a<% if s.An %>n<% end %> <strong><%= as %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
   <% end %>
 </div>
 <p>
@@ -61,7 +85,13 @@
 <h4 id="public-institutions-and-international-organisations">Public Institutions and International Organisations</h4>
 <div class="user-stories">
   <% data.what_do_they_pay.users.institutions.stories.each do |s| %>
-  <p>As a <strong><%= s.As %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
+  <% if s.An
+     as = s.An
+   else
+     as = s.A
+   end
+  %>
+  <p>As a<% if s.An %>n<% end %> <strong><%= as %></strong> I need/want/expect to <em><%= s.I %></em> so that <b><%= s.So %></b></p>
   <% end %>
 </div>
 <p>
