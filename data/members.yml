@@ -1,4 +1,13 @@
 -
+  name: Open Data Services Co-operative
+  url: http://www.opendataservices.coop
+  logo: opendataservices.png
+-
+  name: Public Data Lab
+  url: http://publicdatalab.org/
+  ratio: square
+  logo: publicdatalab.png
+-
   name: SOMO
   url: http://www.somo.nl/
   logo: somo.png
