@@ -1,0 +1,75 @@
+---
+title: Paradise lost
+sub_title: Who will feature on the common EU blacklist of non-cooperative tax jurisdictions?
+date: 27th November 2017
+js: '$(document).ready(function() {
+  $( ".comparison-of-data-fields .toggle-data.on" ).click(function() {
+    $( ".comparison-of-data-fields table" ).addClass( "detailed" );
+    $( ".comparison-of-data-fields .toggle-data.on" ).removeClass( "active" );
+    $( ".comparison-of-data-fields .toggle-data.off" ).addClass( "active" );
+  });
+  $( ".comparison-of-data-fields .toggle-data.off" ).click(function() {
+    $( ".comparison-of-data-fields table" ).removeClass( "detailed" );
+    $( ".comparison-of-data-fields .toggle-data.off" ).removeClass( "active" );
+    $( ".comparison-of-data-fields .toggle-data.on" ).addClass( "active" );
+  });
+});'
+---
+<header>
+    <section>
+        <div id="ok-panel-wrapper"><a class="white ok-ribbon" href="//okfn.org/"><img src="//a.okfn.org/html/oki/panel/assets/images/oki-ribbon.png" alt="Open Knowledge"></a></div>
+        <div class="hashtag">
+            <a href="https://twitter.com/search?q=%23OD4TJ" rel="external">
+                #OD4TJ
+            </a>
+        </div>
+    </section>
+</header>
+
+<main class="paradiselost">
+  <article>
+    <header>
+      <h1><%= current_page.data.title %></h1>
+      <h2><%= current_page.data.sub_title %></h2>
+      <div class="meta">
+        <%= partial "authors" %>
+        <span class="date"><%= current_page.data.date %></span>
+      </div>
+    </header>
+    <div class="summary">
+      <%= partial "summary" %>
+      <span class="logos"><%= partial "logos" %></span>
+    </div>
+    <div class="toc">
+      <h3>Table of contents</h3>
+      <%= partial "contents" %>
+    </div>
+    <div class="acknowledgements">
+      <%= partial "acknowledgements" %>
+    </div>
+    <div class="content">
+      <%= partial "introduction" %>
+      <%= partial "1a" %>
+      <%= partial "1b" %>
+
+      <%= partial "2a" %>
+      <%= partial "2b" %>
+      <%= partial "2c" %>
+
+      <%= partial "3a" %>
+      <%= partial "3b" %>
+      <%= partial "3c" %>
+
+      <%= partial "4" %>
+    </div>
+    <div class="references">
+      <%= partial "references" %>
+    </div>
+    <div class="appendix">
+      <%= partial "appendix" %>
+    </div>
+    <div class="data">
+      <%= partial "data" %>
+    </div>
+  </article>
+</main>

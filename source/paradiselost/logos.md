@@ -1,0 +1,4 @@
+- [![Tax Justice Network](../img/members/tjn.png)](http://www.taxjustice.net/)
+- [![#OD4TJ](../img/logo.png)](http://datafortaxjustice.net/)
+- [![Open Knowledge International](../img/oki-logo.png)](https://okfn.org/)
+- [![Financial Transparency Coalition](../img/members/ftc.png)](https://financialtransparency.org/)
