@@ -10,10 +10,9 @@
   id: conclusion
 - section: Bibliography
   id: bibliography
-- section: Appendix Table A1: Final Blacklist
+- section: Appendix Table A1 - Final Blacklist
   id: appendix
-- section: Appendix Table A2: Screening list and basic statistics
+- section: Appendix Table A2 - Screening list and basic statistics
   id: appendixb
 - section: Data
   id: data
-  
