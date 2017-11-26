@@ -304,6 +304,15 @@ main {
         }
       }
     }
+
+    .scrollable {
+      overflow: auto;
+
+      & > :last-child {
+        margin-bottom: 0;
+      }
+      margin-bottom: $base-spacing;
+    }
   }
 }
 

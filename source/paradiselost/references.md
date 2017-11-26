@@ -6,7 +6,7 @@
 
 * Cobham, A., & Janský, P. (2017). Measuring Misalignment: The Location of US Multinationals’ Economic Activity versus the Location of their Profits. Development Policy Review.
 
-* Cobham, A., & Janský, P. (2018). Global Distribution of Revenue Loss from Tax Avoidance: Re-estimation and Country Results. Journal of International Development, Forthcommi.
+* Cobham, A., & Janský, P. (2018). Global Distribution of Revenue Loss from Tax Avoidance: Re-estimation and Country Results. Journal of International Development, Forthcoming.
 
 * Cobham, A., Janský, P., & Loretz, S. (2017). Key Findings from Global Analyses of Multinational Profit Misalignment. In S. Picciotto (Ed.), Taxing Multinational Enterprises as Unitary Firms (pp. 100–118). Brighton: ICTD.
 
