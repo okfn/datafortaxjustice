@@ -1,4 +1,4 @@
-### Appendix Table A2: Screening list and basic statistics (source: EU Commission, World Bank)
+## Appendix Table A2: Screening list and basic statistics (source: EU Commission, World Bank)
 
 NA = Not available
 
