@@ -38,7 +38,7 @@
 
 * OECD. (2013). OECD Action Plan on Base Erosion and Profit Shifting. [http://doi.org/10.1787/9789264202719-en](http://doi.org/10.1787/9789264202719-en)
 
-* OECD. (2016). AEOI : status of commitments ( as at 26 July 2016 ).
+* OECD. (2016). AEOI : status of commitments (as at 26 July 2016).
 
 * Sharman, J. C. (2006). Havens in a storm. The struggle for global tax regulation. Ithaca: Cornell University Press.
 
