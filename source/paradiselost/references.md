@@ -26,6 +26,8 @@
 
 * Eurostat. (2015). USA-EU - international trade and investment statistics. Retrieved from [http://ec.europa.eu/eurostat/statistics-explained/index.php/USA-EU_-_international_trade_and_investment_statistics](http://ec.europa.eu/eurostat/statistics-explained/index.php/USA-EU_-_international_trade_and_investment_statistics)
 
+* Fichtner, J. (2015). The Offshore-Intensity Ratio Identifying the Strongest Magnets for Foreign Capital. CITYPERC Working Paper, 18
+
 * Garcia-Bernardo, J., Fichtner, J., Takes, F. W., & Heemskerk, E. M. (2017). Uncovering Offshore Financial Centers : Conduits and Sinks in the Global Corporate Ownership Network. Scientific Reports, (June), 1–10. [http://doi.org/10.1038/s41598-017-06322-9](http://doi.org/10.1038/s41598-017-06322-9)
 
 * Hakelberg, L. (2016). Coercion in international tax cooperation: identifying the prerequisites for sanction threats by a great power. Review of International Political Economy, 2290(January), 1–31. [http://doi.org/10.1080/09692290.2015.1127269](http://doi.org/10.1080/09692290.2015.1127269)
