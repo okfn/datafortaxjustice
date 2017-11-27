@@ -7,8 +7,6 @@ X* indicates a country that fails criterion one or three but is either:
 *	• A low or lower middle-income country that is not considered a financial centre
 *	• An upper middle-income country that is not a member of the G20 or the OECD, not an EU member state or candidate and not a financial centre.
 
-Download this dataset: CSV / JSON / XLS 
-
 <div class="scrollable">
   <table border="1">
     <thead>

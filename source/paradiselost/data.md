@@ -1,54 +1,70 @@
 ### Data
 
+We have published the data used for this report using [Datahub](https://datahub.io). DataHub is the fastest way for individuals and teams to find, share and publish high quality data online. Follow the instructions on any of the following datasets to import the data into your tool using R, Pandas, Python, Javascript or Ruby. R users can also download further [.r and .rmd files via Github](https://github.com/okfn/datafortaxjustice/tree/master/data/paradiselost/r).
+
 #### Final blacklist
 
-* Final blacklist - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/blacklist](https://datahub.io/opendatafortaxjustice/blacklist)
+* Final blacklist - [CSV / JSON](https://datahub.io/opendatafortaxjustice/blacklist) / [XLS](https://github.com/okfn/datafortaxjustice/blob/master/data/paradiselost/finalblacklist.xlsx?raw=true)
 
-* EU blacklist - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/blacklisteu](https://datahub.io/opendatafortaxjustice/blacklisteu)
+* EU blacklist - [CSV / JSON](https://datahub.io/opendatafortaxjustice/blacklisteu) / [XLS](https://github.com/okfn/datafortaxjustice/blob/master/data/paradiselost/final%20blacklist-EU.xlsx?raw=true)
 
 #### Outcomes
 
-* Blacklist(with X'ex) - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/blacklistwithxex](https://datahub.io/opendatafortaxjustice/blacklistwithxex)
+* Blacklist(with X'ex) - [CSV / JSON](https://datahub.io/opendatafortaxjustice/blacklistwithxex)
 
-* Criterium Anti BEPS - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/criteriumantibeps](https://datahub.io/opendatafortaxjustice/criteriumantibeps)
+* Country data WB - [CSV / JSON](https://datahub.io/opendatafortaxjustice/countrydatawb)
 
-* Criterium Anti BEPS-EU - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/criteriumantibepseu](https://datahub.io/opendatafortaxjustice/criteriumantibepseu)
+* Criterium Anti BEPS - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumantibeps)
 
-* Criterium Anti BEPS-EU (with X'es) - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/criteriumantibepseuwithxes](https://datahub.io/opendatafortaxjustice/criteriumantibepseuwithxes)
+* Criterium Anti BEPS-EU - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumantibepseu)
 
-* Criterium Anti BEPS (with X'es) - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/criteriumantibepswithxes](https://datahub.io/opendatafortaxjustice/criteriumantibepswithxes)
+* Criterium Anti BEPS-EU (with X'es) - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumantibepseuwithxes)
 
-* Criterium Tax Transparency-EU - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeu](https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeu)
+* Criterium Anti BEPS (with X'es) - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumantibepswithxes)
 
-* Criterium Tax Transparency-EU (with X'es) - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeuwithxes](https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeuwithxes)
+* Criterium Fair Taxation - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumfairtaxation)
 
-* EU blacklist (With X'ex) - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/blacklisteuwithxex](https://datahub.io/opendatafortaxjustice/blacklisteuwithxex)
+* Criterium Fair Taxation-EU - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumfairtaxationeu)
 
-* EU country data WB - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/eucountrydatawb](https://datahub.io/opendatafortaxjustice/eucountrydatawb)
+* Criterium Fair Taxation-EU (with X'es) - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumfairtaxationeuwithxes)
 
-* • [Datahub](https://datahub.io) is the fastest way for individuals and teams to find, share and publish high quality data online.
+* Criterium Fair Taxation (with X'es) - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumfairtaxationwithxes)
+
+* Criterium Tax Transparency - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumtaxtransparency)
+
+* Criterium Tax Transparency (with X'es) - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencywithxes)
+
+* Criterium Tax Transparency-EU - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeu)
+
+* Criterium Tax Transparency-EU (with X'es) - [CSV / JSON](https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeuwithxes)
+
+* EU blacklist (With X'ex) - [CSV / JSON](https://datahub.io/opendatafortaxjustice/blacklisteuwithxex)
+
+* EU country data WB - [CSV / JSON](https://datahub.io/opendatafortaxjustice/eucountrydatawb)
 
 #### Raw data
 
-* Countries - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/countries](https://datahub.io/opendatafortaxjustice/countries)
+* Conduit-OFCs - [CSV / JSON](https://datahub.io/opendatafortaxjustice/conduits)
 
-* List of EU countries - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/listofeucountries](https://datahub.io/opendatafortaxjustice/listofeucountries)
+* Corporate tax rates - [CSV / JSON](https://datahub.io/opendatafortaxjustice/corporatetaxrates)
 
-* Status of Agreements 2017 - CSV / JSON
-[https://datahub.io/opendatafortaxjustice/statusofagreements2017](https://datahub.io/opendatafortaxjustice/statusofagreements2017)
+* Countries - [CSV / JSON](https://datahub.io/opendatafortaxjustice/countries)
+
+* DTTL tax withholding tax rates - [CSV / JSON](https://datahub.io/opendatafortaxjustice/dttltaxwithholdingtaxrates)
+
+* Indicators - [CSV / JSON](https://datahub.io/opendatafortaxjustice/indicators)
+
+* Indicators EU - [CSV / JSON](https://datahub.io/opendatafortaxjustice/indicatorseu)
+
+* Income level - [CSV / JSON](https://datahub.io/opendatafortaxjustice/incomelevel)
+
+* List of EU countries - [CSV / JSON](https://datahub.io/opendatafortaxjustice/listofeucountries)
+
+* Preferential regimes - [CSV / JSON](https://datahub.io/opendatafortaxjustice/preferentialregimes)
+
+* Sinks - [CSV / JSON](https://datahub.io/opendatafortaxjustice/sinks)
+
+* Status of Agreements 2017 - [CSV / JSON](https://datahub.io/opendatafortaxjustice/statusofagreements2017)
 
 #### Data sources per indicator
 
