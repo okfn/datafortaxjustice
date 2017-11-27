@@ -2,8 +2,6 @@
 
 NA = Not available
 
-ADD LINK HERE TO DATASET ON DATAHUB.IO
-
 <div class="scrollable">
   <table border="1">
     <thead>
