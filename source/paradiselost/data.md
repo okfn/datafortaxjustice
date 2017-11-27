@@ -81,9 +81,9 @@ We have published the data used for this report using [Datahub](https://datahub.
 ##### Criterion 2
 * Sink or Conduit?: [https://www.ofcmeter.org](https://www.ofcmeter.org)
 * Withholding Tax Rate on dividends:
-[https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Tax/dttl-tax-withholding-tax-rates.pdf](https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Tax/dttl-tax-withholding-tax-rates.pdf)
-* Preferential tax regime: [https://ec.europa.eu/taxation_customs/sites/taxation/files/2016-09-15_scoreboard-indicators.pdf](https://ec.europa.eu/taxation_customs/sites/taxation/files/2016-09-15_scoreboard-indicators.pdf)
-* Corporate Tax Rate: [https://home.kpmg.com/xx/en/home/services/tax/tax-tools-and-resources/tax-rates-online/corporate-tax-rates-table.html](https://home.kpmg.com/xx/en/home/services/tax/tax-tools-and-resources/tax-rates-online/corporate-tax-rates-table.html)
+[https://www2.deloitte.com](https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Tax/dttl-tax-withholding-tax-rates.pdf)
+* Preferential tax regime: [https://ec.europa.eu](https://ec.europa.eu/taxation_customs/sites/taxation/files/2016-09-15_scoreboard-indicators.pdf)
+* Corporate Tax Rate: [https://home.kpmg.com](https://home.kpmg.com/xx/en/home/services/tax/tax-tools-and-resources/tax-rates-online/corporate-tax-rates-table.html)
 * TP Rules, Thin Cap rules, CFC rules: [http://taxsummaries.pwc.com](http://taxsummaries.pwc.com)
 
 ##### Criterion 3
