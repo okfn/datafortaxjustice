@@ -1,0 +1,151 @@
+---
+title: "Scrape OECD DATA"
+author: "Wouter Lips"
+date: "16 augustus 2017"
+output: html_document
+---
+DISCLAIMER: Please do not spread code without Authors' permission!
+
+Libraries used: rvest, Rselenium, wdman, stringr, countrycode, ggmap
+First, We have to scrape the URLS of the Jurisdictions using Selenium. If error port number occurs, change random port number.
+
+```{r}
+library(rvest, warn.conflicts = FALSE)
+library(RSelenium)
+library(wdman)
+url <- "http://www.eoi-tax.org/jurisdictions/#default"
+
+server <- phantomjs(port=4442L, verbose=FALSE)
+browser <- remoteDriver(browserName = "phantomjs", port=4442L)
+
+browser$open()
+browser$navigate(url)
+browser$getPageSource()
+browser$screenshot(display=TRUE)
+
+links <- browser$findElements(using="css selector", value="#jurisdiction-list a")
+
+urls <- c()
+for (i in 1:length(links)){
+  urls <- c(urls, 
+            links[[i]]$getElementAttribute('href')[[1]])
+}
+
+names <- c()
+for (i in 1:length(links)){
+  names <- c(names, 
+            links[[i]]$getElementAttribute('text')[[1]])
+}
+urls <- paste(urls, "/agreements", sep="")
+jurisdictions <- cbind(names, urls)
+jurisdictions <- as.data.frame(jurisdictions)
+jurisdictions$urls <- as.character(jurisdictions$urls)
+jurisdictions$names <- as.character(jurisdictions$names)
+browser$close
+
+```
+
+#now, We write a function that will scrape the data of 1 page into the format we need
+```{r}
+url <- jurisdictions$urls[1]
+name <- jurisdictions$names[1]
+html <- read_html(url)
+table <- html_table(html)
+
+scrapetable <- function(url,name){
+table <- data.frame()
+html <- read_html(url)
+table <- html_table(html)
+table <- as.data.frame(table)
+table$jurisdiction1 <- rep(name, nrow(table))
+table <- list(table)
+return(table)
+}
+
+
+
+
+```
+
+Now, we write a loop that will scrape multiple tables from all URLS
+```{r}
+agreements <- list()
+for(i in 1:nrow(jurisdictions)){
+message(i,"/", nrow(jurisdictions))
+url <- jurisdictions$urls[i]
+name <- jurisdictions$names[i]
+
+agreements[i] <- scrapetable(url,name)
+
+Sys.sleep(1)
+}
+
+oecd <- do.call(rbind, agreements)
+
+
+```
+
+cleanup of data and write into CSV
+```{r}
+
+library(stringr)
+
+"remove empty column"
+oecd <- oecd[,-7]
+
+#reorder and rename
+oecd <- oecd[,c(7,1,2,3,4,5,6)]
+colnames(oecd) <- c("jurisdiction 1", "jurisdiction 2", "type", "signed", "in force","meets int. standard", "para 4 & 5")
+oecd$`jurisdiction 1` <- str_replace(oecd$`jurisdiction 1`, "^.", "")
+
+#cleanup dates
+oecd$signed <- str_sub(oecd$signed, -10,-1)
+oecd$`in force` <- str_sub(oecd$"in force", -10,-1)
+
+#cleanup yes and no
+oecd$`meets int. standard` <- str_replace(oecd$`meets int. standard`, "Yes", "Y") 
+  oecd$`meets int. standard` <- str_replace(oecd$`meets int. standard`, "No", "N") 
+oecd$`meets int. standard` <- str_replace(oecd$`meets int. standard`, "Unreviewed","U")
+oecd$`para 4 & 5` <- str_replace(oecd$`para 4 & 5`, "Yes", "Y")
+oecd$`para 4 & 5` <- str_replace(oecd$`para 4 & 5`, "No", "N")
+
+write.csv(oecd, file = "Status Of Agreements 2017.csv", row.names = FALSE)
+```
+
+
+Additional: Create Edges and Nodes tables
+```{r}
+library(countrycode)
+oecd <- read.csv("Status Of Agreements 2017.csv")
+Treatiesedges  <- data.frame(oecd$jurisdiction.1,oecd$jurisdiction.2,oecd$type,oecd$meets.int..standard,oecd$in.force)
+colnames(Treatiesedges) <- c("source", "target", "agreement", "Meets International Standard", "Year in Force")
+Treatiesedges$`Year in Force` <- str_sub(Treatiesedges$`Year in Force`,1,4)
+sources <- as.character(Treatiesedges$source[!duplicated(Treatiesedges$source)])
+
+targets <- as.character(Treatiesedges$target[!duplicated(Treatiesedges$target)])
+Treatiesnodes <- data.frame(c(sources,targets), stringsAsFactors = FALSE)
+colnames(Treatiesnodes) <- ("Id")
+Treatiesnodes <- data.frame(Treatiesnodes$Id[!duplicated(Treatiesnodes$Id)])
+colnames(Treatiesnodes) <- ("Id")
+Treatiesnodes$label <- Treatiesnodes$Id
+Treatiesnodes$continent <- countrycode(Treatiesnodes$Id, "country.name", "continent")
+
+Treatiesedges$Id <- Treatiesedges$source
+
+library(ggmap)
+
+Treatiesnodes$Id <- as.character(Treatiesnodes$Id)
+g <- geocode(Treatiesnodes$Id)
+
+Treatiesnodes$lng <- g$lon
+Treatiesnodes$lat <- g$lat
+
+EdgesTIEA <- Treatiesedges[grep('TIEA', Treatiesedges$agreement),]
+EDGESDTA <- Treatiesedges[grep('DTC', Treatiesedges$agreement),]
+
+write.csv(Treatiesnodes, file = "NodesTreaties.csv", row.names = FALSE)
+write.csv(Treatiesedges, file = "EdgesTreaties.csv", row.names = FALSE)
+write.csv(EdgesTIEA, file = "EdgesTIEA.csv", row.names = FALSE)
+write.csv(EDGESDTA, file = "EdgesDTC.csv", row.names = FALSE)
+```
+
