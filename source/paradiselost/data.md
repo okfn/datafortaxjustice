@@ -1,6 +1,6 @@
 ### Data
 
-We have published the data used for this report using [Datahub](https://datahub.io). DataHub is the fastest way for individuals and teams to find, share and publish high quality data online. Follow the instructions on any of the following datasets to import the data into your tool using R, Pandas, Python, Javascript or Ruby. R users can also download further [.r and .rmd files via Github](https://github.com/okfn/datafortaxjustice/tree/master/data/paradiselost/r).
+We have published the data used for this report using [Datahub](https://datahub.io/opendatafortaxjustice). DataHub is the fastest way for individuals and teams to find, share and publish high quality data online. Follow the instructions on any of the following datasets to import the data into your tool using R, Pandas, Python, Javascript or Ruby. R users can also download further [.r and .rmd files via Github](https://github.com/okfn/datafortaxjustice/tree/master/data/paradiselost/r).
 
 #### Final blacklist
 
