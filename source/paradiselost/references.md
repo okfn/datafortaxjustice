@@ -10,6 +10,8 @@
 
 * Cobham, A., Janský, P., & Loretz, S. (2017). Key Findings from Global Analyses of Multinational Profit Misalignment. In S. Picciotto (Ed.), Taxing Multinational Enterprises as Unitary Firms (pp. 100–118). Brighton: ICTD.
 
+* Cobham, A., Jansky, P. & Meinzer, M.(2015). The financial secrecy index: shedding new light on the geography of secrecy, Economic Geography 91(3): 281–303.
+
 * Council of the European Union. (2016). Council Conclusions on the criteria for and process leading to the establishment of the EU list of non- cooperative jurisdictions for tax purposes.
 
 * Drucker, J., & Bowers, S. (2017, November 6). After a Tax Crackdown, Apple Found a New Shelter for Its Profits. New York Times. New York. Retrieved from [https://www.nytimes.com/2017/11/06/world/apple-taxes-jersey.html](https://www.nytimes.com/2017/11/06/world/apple-taxes-jersey.html)
