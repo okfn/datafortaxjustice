@@ -1,0 +1,140 @@
+---
+title: "Fair taxation Criteria"
+author: "Wouter Lips"
+date: "10 september 2017"
+output: html_document
+---
+
+These are the libraries we use
+
+```{r}
+library(rvest)
+library(tidyverse)
+library(countrycode)
+library(tabulizer)
+library(stringr)
+library(xlsx)
+```
+
+this wil call the list of countries
+
+```{r}
+countries <- read.csv("data/countries.csv", stringsAsFactors = FALSE, strip.white = TRUE)
+countries$iso <- countrycode(countries$Countries, "country.name", "iso2c")
+```
+
+This wil scrape the tables on the OFC meter website and assign sink/conduit to countries. Sink Centrality value included.
+
+```{r}
+url <- "https://www.ofcmeter.org/"
+html <- read_html(url)
+tables <- html_table(html)
+
+sinks <- data.frame(tables[1])
+sinks <- data.frame(stack(sinks[, c(1,4,7)]), stack(sinks[, c(2,5,8)]), stack(sinks[,c(3,6,9)]))[,-c(2,4,6)]
+
+conduits <- data.frame(tables[2])
+
+#loop that determines if a country is named in the sink list, conduit list or not. value for sink includes the sink centrality value.
+
+for (i in 1:nrow(countries)) {
+  if (any(grepl(countries$iso[i], sinks$values )) == TRUE) {
+    countries$sinkconduit[i] <- paste("sink ", "(", sinks$values.2[sinks$values == countries$iso[i]] , ")", sep = "" )
+  } else if (any(grepl(countries$iso[i], conduits$X1)) == TRUE) {
+    countries$sinkconduit[i] <- "conduit"
+  } else {countries$sinkconduit[i] <- "no"}
+  }
+
+```
+
+This will call a csv of witholding tax rates by Deloitte, and add them to the countries dataframe. It also categorizes countries as having a zero percentage witholding tax regime if either
+
+```{r}
+dividends <- read.csv("data/dttl-tax-withholding-tax-rates.csv", sep = ";", stringsAsFactors = FALSE, strip.white = TRUE)
+dividends$iso <- countrycode(dividends$Jurisdiction, "country.name", "iso2c")
+
+countries <- left_join(countries, dividends[,-1], by = 'iso')
+#enhance readability
+countries$Dividends.witholding.tax <- gsub("/", " / ", countries$Dividends.witholding.tax)
+
+for (i in 1:nrow(countries)) {
+  if (any(grepl("^0%", countries$Dividends.witholding.tax[i])) == TRUE | is.na(countries$Dividends.witholding.tax[i]) == TRUE ) {
+    countries$zeroper[i] <- "yes"
+  } else {
+    countries$zeroper[i] <- "no"
+  }
+}
+
+```
+
+This will call a csv with the EU's scoreboards list with just the column of preferential tax regimes and bind it to the countries list
+
+```{r}
+prefreg <- read.csv("data/preferential regimes.csv", stringsAsFactors = FALSE, strip.white = TRUE, sep = ";")
+
+countries <- left_join(countries, prefreg, by = "Countries")
+
+```
+
+This will add the corporate tax rates to the list and add if they are in which quantile they are
+
+```{r}
+taxrates <- read.csv("data/corporate tax rates.csv", stringsAsFactors = FALSE, strip.white = TRUE, sep = ";")
+taxrates <- taxrates[,c(1,16)]
+colnames(taxrates) <- c("Countries", "rate")
+taxrates$quantile <- findInterval(taxrates$rate, quantile(taxrates$rate))
+taxrates$quantile <- factor(taxrates$quantile, labels = c("bottom 25", "between 25 and 50", "between 50 and 75", "top 25", "..."))
+
+countries <- left_join(countries, taxrates, by = "Countries")
+
+```
+
+This will add a spreadsheet that shows if a country has TP regulations, Thin cap regulations and a CFC regimes, compiled from PWC's world tax summary and supplemented with EY and Deloitte data
+
+```{r}
+
+indicators <- read.csv("data/indicators.csv", stringsAsFactors = FALSE, sep = ";", strip.white = TRUE)
+countries <- left_join(countries, indicators, by = "Countries")
+
+```
+
+
+
+
+
+
+This will determine if a country passes criterion 2. It fails if it is named as a sink/conduit and has either no witholding taxes or a preferential tax regime.
+
+```{r}
+
+for (i in 1:nrow(countries)) {
+  if (countries$sinkconduit[i] != "no" & (countries$zeroper[i] == "yes" | countries$preferential.regime[i] == "yes")) {
+    countries$crit2[i] <- "no"
+  } else {
+    countries$crit2[i] <- "yes"
+  }
+}
+
+
+
+```
+
+Cleanup and write CSV
+```{r}
+countries <- countries[,c(1,12,3,4,5,6,7,8,9,10,11)]
+colnames(countries) <- c("jurisdiction", "passes fair taxation", "is a sink of a conduit (with sink centrality value)", "witholding tax rate on dividends", "has a zero percent rate?", "has a preferential tax regime?", "Corporate tax rate (2017)", "Corporate tax rate ranking", "Has transfer pricing rules?", "has thin cap rules?", "has CFC rules?")
+
+countries$`witholding tax rate on dividends` <- gsub("\n%", "%", countries$`witholding tax rate on dividends`)
+
+
+write.csv(countries, file = "outcomes/Criterium Fair Taxation.csv", row.names = FALSE)
+#replace yes and no with x and empty
+countries <- as.data.frame(sapply(countries,gsub,pattern="yes",replacement="x"))
+countries <- as.data.frame(sapply(countries,gsub,pattern="no",replacement=""))
+
+write.csv(countries, file = "outcomes/Criterium Fair Taxation (with X'es).csv", row.names = FALSE)
+write.xlsx(countries, file = "final blacklist/final blacklist.xlsx", sheetName = "Fair Taxation", row.names = FALSE, col.names = TRUE, append = TRUE, showNA = FALSE)
+```
+
+
+
