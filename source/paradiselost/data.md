@@ -1,6 +1,54 @@
 ### Data
 
-[Datahub](https://datahub.io) is the fastest way for individuals and teams to find, share and publish high quality data online.
+#### Final blacklist
+
+* Final blacklist - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/blacklist](https://datahub.io/opendatafortaxjustice/blacklist)
+
+* EU blacklist - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/blacklisteu](https://datahub.io/opendatafortaxjustice/blacklisteu)
+
+#### Outcomes
+
+* Blacklist(with X'ex) - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/blacklistwithxex](https://datahub.io/opendatafortaxjustice/blacklistwithxex)
+
+* Criterium Anti BEPS - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/criteriumantibeps](https://datahub.io/opendatafortaxjustice/criteriumantibeps)
+
+* Criterium Anti BEPS-EU - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/criteriumantibepseu](https://datahub.io/opendatafortaxjustice/criteriumantibepseu)
+
+* Criterium Anti BEPS-EU (with X'es) - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/criteriumantibepseuwithxes](https://datahub.io/opendatafortaxjustice/criteriumantibepseuwithxes)
+
+* Criterium Anti BEPS (with X'es) - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/criteriumantibepswithxes](https://datahub.io/opendatafortaxjustice/criteriumantibepswithxes)
+
+* Criterium Tax Transparency-EU - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeu](https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeu)
+
+* Criterium Tax Transparency-EU (with X'es) - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeuwithxes](https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeuwithxes)
+
+* EU blacklist (With X'ex) - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/blacklisteuwithxex](https://datahub.io/opendatafortaxjustice/blacklisteuwithxex)
+
+* EU country data WB - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/eucountrydatawb](https://datahub.io/opendatafortaxjustice/eucountrydatawb)
+
+* • [Datahub](https://datahub.io) is the fastest way for individuals and teams to find, share and publish high quality data online.
+
+#### Raw data
+
+* Countries - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/countries](https://datahub.io/opendatafortaxjustice/countries)
+
+* List of EU countries - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/listofeucountries](https://datahub.io/opendatafortaxjustice/listofeucountries)
+
+* Status of Agreements 2017 - CSV / JSON
+[https://datahub.io/opendatafortaxjustice/statusofagreements2017](https://datahub.io/opendatafortaxjustice/statusofagreements2017)
 
 #### Data sources per indicator
 
