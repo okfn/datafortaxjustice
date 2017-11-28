@@ -58,6 +58,8 @@ We have published the data used for this report using [Datahub](https://datahub.
 
 * Income level - [CSV / JSON](https://datahub.io/opendatafortaxjustice/incomelevel)
 
+* International members - [CSV / JSON](https://datahub.io/opendatafortaxjustice/internationalmembers)
+
 * List of EU countries - [CSV / JSON](https://datahub.io/opendatafortaxjustice/listofeucountries)
 
 * Preferential regimes - [CSV / JSON](https://datahub.io/opendatafortaxjustice/preferentialregimes)
