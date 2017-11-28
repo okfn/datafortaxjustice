@@ -1,0 +1,75 @@
+---
+title: "Anti-BEPS measures Criteria"
+author: "Wouter Lips"
+date: "29 augustus 2017"
+output: html_document
+---
+
+This will call the necessary libraries
+
+```{r}
+library(rvest)
+library(stringr)
+library(tabulizer)
+library(xlsx)
+```
+
+This will call the list of countries and create a dataframe: Anti-BEPS, in which we will bind everything
+
+```{r}
+countries <- read.csv("data/List of EU Countries.csv", stringsAsFactors = FALSE)
+colnames(countries) <- "Countries"
+countries$Countries <- trimws(countries$Countries)
+antiBEPS <- data.frame(countries$Countries, stringsAsFactors = FALSE)
+colnames(antiBEPS) <- "jurisdictions"
+```
+
+As initatial criterion, we only have the expressed intention to implement BEPS minimal standards to go on. We'll also check for signature of the MLI.
+
+```{r}
+#signature MLI
+tables <- extract_text("http://www.oecd.org/tax/treaties/beps-mli-signatories-and-parties.pdf")
+for(i in 1:nrow(countries)){
+  if (grepl(antiBEPS$jurisdictions[i], tables, ignore.case = TRUE) == TRUE) {antiBEPS$MLI[i] <- "yes"}
+  else {antiBEPS$MLI[i] <- "no"}
+}
+
+#BEPS inclusive Framework?
+tables <- extract_text("http://www.oecd.org/tax/beps/inclusive-framework-on-beps-composition.pdf")
+for(i in 1:nrow(countries)){
+  if (grepl(antiBEPS$jurisdictions[i], tables, ignore.case = TRUE) == TRUE) {antiBEPS$Inclf[i] <- "yes"}
+  else {antiBEPS$Inclf[i] <- "no"}
+}
+
+#ATAD
+antiBEPS$atad <- rep("yes")
+
+```
+
+Determine if jurisdiction passes criterion Anti BEPS
+
+```{r}
+for(i in 1:nrow(antiBEPS)){
+  if (antiBEPS$Inclf[i] == "yes"| antiBEPS$atad[i] == "yes") {antiBEPS$criterion3[i] <- "yes"}
+  else {antiBEPS$criterion3[i] <- "no"}
+  
+}
+
+```
+
+Cleanup and write CSV
+
+```{r}
+antiBEPS <- antiBEPS[,c(1,5,3,2,4)]
+colnames(antiBEPS) <- c("jurisdiction", "Passes Implementation of Anti-Beps Measures", "Member of the Inclusive Framework on BEPS", "Signatory of the MLI", "Implements ATAD")
+write.csv(antiBEPS, file = "outcomes/Criterium Anti BEPS-EU.csv", row.names = FALSE)
+#replace yes and no with x and empty
+antiBEPS <- as.data.frame(sapply(antiBEPS,gsub,pattern="yes",replacement="x"))
+antiBEPS <- as.data.frame(sapply(antiBEPS,gsub,pattern="no",replacement=""))
+
+write.csv(antiBEPS, file = "outcomes/Criterium Anti BEPS-EU (with X'es).csv", row.names = FALSE)
+write.xlsx(antiBEPS, file = "final blacklist/final blacklist-EU.xlsx", sheetName = "Anti-BEPS measures", row.names = FALSE, col.names = TRUE, append = TRUE, showNA = FALSE)
+```
+
+
+

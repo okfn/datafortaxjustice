@@ -1,0 +1,182 @@
+---
+title: "TaxTransparancy Criteria"
+author: "Wouter Lips"
+date: "28 augustus 2017"
+output: html_document
+---
+
+#question to solve: if no global forum rating -> regard as non compliant by default?
+
+This will call the necessary libraries
+
+```{r}
+library(rvest)
+library(stringr)
+library(stringi)
+library(tidyverse)
+library(tabulizer)
+library(xlsx)
+```
+
+This will call the list of countries and create a dataframe tax: tax transparancy, in which we will bind everything
+
+```{r}
+countries <- read.csv("data/List of EU Countries.csv", stringsAsFactors = FALSE)
+colnames(countries) <- "Countries"
+countries$Countries <- trimws(countries$Countries)
+taxtransparancy <- data.frame(countries$Countries, stringsAsFactors = FALSE)
+colnames(taxtransparancy) <- "jurisdictions"
+```
+This code will asses which countries participate in the CRS either by MCAA or by Bilteral relations. All criteria data is found on the OECD CRS bilateral exchange page. Not in the relationships, but in the list of options you can choose. for completness, we will include MCAA signatures.
+
+```{r}
+
+#MCAA Signatory
+MCAA <- extract_tables("https://www.oecd.org/ctp/exchange-of-tax-information/MCAA-Signatories.pdf")
+MCAA <- unlist(MCAA)
+
+ParticipateMCAA <- list()
+for (i in 1:nrow(countries)) {
+  if (any(grepl(countries$Countries[i], MCAA, ignore.case = TRUE) == TRUE)) {ParticipateMCAA[i] <- "yes"}
+  else {ParticipateMCAA[i] <- "no"}
+}
+taxtransparancy$MCAA.participation <- unlist(ParticipateMCAA)
+
+
+#CRS participation by MCAA or bilateral
+url <- "http://eoitaxressources.oecd.org/AEOIPortal/ExchangeRelationship/Exchange.aspx"
+html <- read_html(url)
+CRS <- html_text(html_nodes(html,"#Body_cusExchangeRelationshipFilters_drpFromJurisdction"))
+participateCRS <- list()
+for (i in 1:nrow(countries)) {
+  if (any(grep(countries$Countries[i], CRS) == TRUE)) {participateCRS[i] <- "yes"}
+  else {participateCRS[i] <- "no"}
+}
+taxtransparancy$CRS.participation <- unlist(participateCRS)
+for (i in 1:nrow(taxtransparancy)) {
+  if (taxtransparancy$CRS.participation[i] == "yes") {taxtransparancy$criteria1.1[i] <- "yes"}
+  else {taxtransparancy$criteria1.1[i] <- "no"}}
+  
+
+
+```
+
+This additional code will asses the number of jurisdictions a country shares with
+
+```{r}
+relations <- str_split(CRS, "\\)")
+relations <- unlist(relations)
+for(i in 1:nrow(taxtransparancy)) {
+  if (any(grepl(countries$Countries[i], relations) == TRUE)) {
+    taxtransparancy$numberofexchanges[i] <- as.numeric(stri_extract_all_regex(relations[grep(countries$Countries[i], relations)], "[0-9]+"))} else {
+    taxtransparancy$numberofexchanges[i] <- "NA"  
+    }}
+taxtransparancy$numberofexchanges <- as.numeric(unlist(taxtransparancy$numberofexchanges))
+
+```
+
+This code will call all OECD global forum ratings, bind them to countries and then assign a yes or no if the country passes criteria 1.2 and bind it to the taxtransparancy frame
+```{r}
+#this piece of code will produce the list of ratings of the information
+url <- "http://www.oecd.org/tax/transparency/exchange-of-information-on-request/ratings/"
+html <- read_html(url)
+table <- data.frame(html_table(html, fill = TRUE))
+colnames(table) <- c("phase1", "phase2", "rating","na")
+table <- table[-1,]
+ratings <- list()
+for (i in 1:nrow(countries)) {
+    if (any(grepl(countries$Countries[i], table$phase1)) == TRUE) { ratings[i] <- table[grep(countries$Countries[i], table$phase1),"rating"] }
+    
+  else if (any(grepl(countries$Countries[i], table$phase2)) == TRUE) {ratings[i] <- table[grep(countries$Countries[i], table$phase2),"rating"] }
+
+  else{ratings[i] <- "NA"}
+  }
+taxtransparancy$ratings <- unlist(ratings)
+taxtransparancy$ratings <- str_replace_all(taxtransparancy$ratings, "Provisionally* Largely Compliant", "Provisionally Largely Compliant")
+
+#Checks if the jurisdiction is scheduled for a rating by 30 june 2018
+
+schedule.2018.first.half <- c("Liechtenstein","Botswana", "Austria", "Saudi Arabia", "British Virgin
+Islands","Seychelles", "Luxembourg", "Malaysia","Brazil","Spain", "Hong Kong","Croatia", "Macao", "Trinidad and Tobago", "Egypt", "Moldova")
+
+for (i in 1:nrow(taxtransparancy)){
+  if (taxtransparancy$ratings[i] == "Compliant"|taxtransparancy$ratings[i] == "Largely Compliant") {
+    taxtransparancy$schedulerating[i] <- "already rated"
+  } else if ((taxtransparancy$ratings[i] != "Compliant" & taxtransparancy$ratings[i] != "Largely Compliant" & any(grepl(taxtransparancy$jurisdictions[i], schedule.2018.first.half)) == TRUE)) {
+    taxtransparancy$schedulerating[i] <- "before 30 june 2018"
+  } else {
+    taxtransparancy$schedulerating[i] <- "after 30 june 2018 or not"
+    }
+  }
+
+for (i in 1:nrow(taxtransparancy)) {
+  if (taxtransparancy$ratings[i] %in% c("Compliant","Largely Compliant")) {taxtransparancy$criteria1.2[i] <- "yes"}
+  else {taxtransparancy$criteria1.2[i] <- "no"}
+}
+```
+This code will make the assesment of passing criteria 1.3
+
+```{r}
+#this part assesses Multilateral Convention participation
+table <- extract_tables("http://www.oecd.org/tax/exchange-of-tax-information/Status_of_convention.pdf")
+Multicon <- list()
+for (i in 1:nrow(countries)) {
+if (any(grepl(countries$Countries[i], table, ignore.case = TRUE)) == TRUE) {taxtransparancy$multicon[i] <- "yes"}
+else{taxtransparancy$multicon[i] <- "no"}
+}
+
+#this part assesses tax exchange networks
+#read all tax agreements and subset those that contain para 4 & 5,  and have an EU country as partner 
+taxagreements <- read.csv("data/Status Of Agreements 2017.csv", stringsAsFactors = FALSE)
+taxagreements <- taxagreements[taxagreements$para.4...5 == "Y",]
+EUcountries <- c("Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovak Republic", "Slovenia", "Spain", "Sweden", "United Kingdom")
+taxagreements <- taxagreements[taxagreements$jurisdiction.2 %in% EUcountries, ]
+
+
+#this loop now determines if the treaty network is suffiecient.
+for (i in 1:nrow(countries)) {
+if(length(grep(countries$Countries[i], taxagreements$jurisdiction.1, ignore.case = TRUE)) >= 28) {
+  taxtransparancy$numberoftreaties[i] <- length(grep(countries$Countries[i],      taxagreements$jurisdiction.1, ignore.case = TRUE))
+  
+taxtransparancy$network[i] <- "yes"
+} else {
+  taxtransparancy$numberoftreaties[i] <- length(grep(countries$Countries[i],      taxagreements$jurisdiction.1, ignore.case = TRUE))
+    taxtransparancy$network[i] <- "no"
+    }
+}
+
+#this loop determines if jurisdiction passes if jurisdictions passes criteria 1.3
+for (i in 1:nrow(taxtransparancy)) {
+  if (taxtransparancy$multicon[i] == "yes") {taxtransparancy$criteria1.3[i] <- "yes"}
+  else if (taxtransparancy$network[i] == "yes") {taxtransparancy$criteria1.3[i] <- "yes"}
+  else {taxtransparancy$criteria1.3[i] <- "no"}
+}
+
+```
+
+This code determines if a country passes Criteria 1. 
+
+```{r}
+for(i in 1: nrow(taxtransparancy)) {
+if (taxtransparancy$ratings[i] %in% c("Non Compliant")) {taxtransparancy$criteria.1[i] <- "no"}
+else if (length(grep("yes", taxtransparancy[i,c("criteria1.1", "criteria1.2","criteria1.3")])) >= 2){taxtransparancy$criteria.1[i] <- "yes"}
+else 
+{taxtransparancy$criteria.1[i] <- "no"}
+}
+
+```
+
+Cleanup and write csv
+
+```{r}
+taxtransparancy <- taxtransparancy[,c(1,13,4,2,3,5,8,6,7,12,9,10,11)]
+colnames(taxtransparancy) <- c("jurisdiction", "Passes Tax Transparency", "Passes Criterion 1.1", "MCAA signatory", "CRS by MCAA or Bilateral Network", "Number of Automatic exchange relations", "Passes Criterion 1.2", "Global Forum Rating", "Rating Schedule", "Passes Criterion 1.3", "Multilateral Convention Signatory", "Number of treaties with EU Countries that contain paragraph 4 & 5","Has Sufficient Treaty Network")
+write.csv(taxtransparancy, file = "outcomes/Criterium Tax Transparancy-EU.csv", row.names = FALSE)
+#replace yes and no with x and empty
+taxtransparancy <- as.data.frame(sapply(taxtransparancy,gsub,pattern = "yes",replacement="x"))
+taxtransparancy <- as.data.frame(sapply(taxtransparancy,gsub,pattern = "no",replacement=""))
+
+write.csv(taxtransparancy, file = "outcomes/Criterium Tax Transparancy-EU (with X'es).csv", row.names = FALSE)
+write.xlsx(taxtransparancy, file = "final blacklist/final blacklist-EU.xlsx", sheetName = "Tax transparency", row.names = FALSE, col.names = TRUE, append = FALSE, showNA = FALSE)
+```
+

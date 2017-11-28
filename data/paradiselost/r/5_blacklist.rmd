@@ -1,0 +1,152 @@
+---
+title: "5-Bring blacklist together"
+author: "Wouter Lips"
+date: "10 september 2017"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(xlsx)
+library(rvest)
+```
+
+In this document, we will put the three criteria together and determine who ends up on the final blacklist. First we will call the CSV's from all three criteria
+```{r}
+taxtransparancy <- read.csv("outcomes/Criterium Tax Transparancy.csv", stringsAsFactors = FALSE, strip.white = TRUE)
+fairtaxation <- read.csv("outcomes/Criterium Fair Taxation.csv", stringsAsFactors = FALSE, strip.white = TRUE)
+antibeps <- read.csv("outcomes/Criterium Anti BEPS.csv", stringsAsFactors = FALSE, strip.white = TRUE)
+
+```
+
+now, we will put them together.
+
+```{r}
+blacklist <- taxtransparancy[,c(1:2)]
+blacklist <- left_join(blacklist, fairtaxation[,c(1,2)], by = "jurisdiction")
+blacklist <- left_join(blacklist, antibeps[,c(1,2)], by = "jurisdiction")
+```
+
+Now, we write a loop to determine if a jurisdiction should appear on the list.
+
+```{r}
+for(i in 1:nrow(blacklist)) {
+  if (any(grepl("no",blacklist[i,c(2,3,4)])) == TRUE){
+    blacklist$list[i] <- "yes"
+  } else {
+    blacklist$list[i] <- "no"
+  }
+}
+
+for(i in 1:nrow(blacklist)) {
+  if (blacklist$passes.fair.taxation[i] == "no" & blacklist$Passes.Tax.Transparency[i] == "yes" &       blacklist$Passes.Implementation.of.Anti.Beps.Measures[i] == "yes") {
+    blacklist$onlycrit2[i] <- "yes"
+  } else {
+     blacklist$onlycrit2[i] <- "no" 
+    }
+}
+
+
+```
+cleanup and write csv
+```{r}
+blacklist <- blacklist[,c(1,5,2,3,4,6)]
+colnames(blacklist) <- c("jurisdiction", "blacklisted?", "Passes Criterion Tax Transparancy", "Passes Criterion Fair Taxation", "Passes Criterion Anti Beps", "Listed solely on criterion two")
+write.csv(blacklist, file = "outcomes/blacklist.csv", row.names = FALSE)
+
+```
+
+Add the income levels and membership
+
+```{r}
+blacklist <- read.csv("outcomes/blacklist.csv", stringsAsFactors = FALSE)
+
+url <- "https://data.worldbank.org/income-level/low-income"
+html <- read_html(url)
+nodes <- html_nodes(html, ".label")
+lowincome <- html_text(nodes)
+lowincome <- lowincome[-(grep("Korea",lowincome))]
+
+url <- "https://data.worldbank.org/income-level/lower-middle-income"
+html <- read_html(url)
+nodes <- html_nodes(html, ".label")
+lowermiddleincome <- html_text(nodes)
+lowermiddleincome[grep("Vietnam", lowermiddleincome)] <- "Viet Nam"
+lowermiddleincome <- c(lowermiddleincome, "Vanuatu")
+
+
+url <- "https://data.worldbank.org/income-level/upper-middle-income"
+html <- read_html(url)
+nodes <- html_nodes(html, ".label")
+uppermiddleincome <- html_text(nodes)
+uppermiddleincome[grep("Macedonia, FYR", uppermiddleincome)] <- "Former Yugoslav Republic of Macedonia"
+uppermiddleincome[grep("St. Vincent and the Grenadines", uppermiddleincome)] <- "Saint Vincent and the Grenadines"
+uppermiddleincome[grep("St. Lucia", uppermiddleincome)] <- "Saint Lucia"
+
+
+
+url <- "https://data.worldbank.org/income-level/high-income"
+html <- read_html(url)
+nodes <- html_nodes(html, ".label")
+highincome <- html_text(nodes)
+highincome <- c(highincome, "Taiwan")
+highincome[grep("Curacao", highincome)] <- "Curaçao"
+highincome[grep("Channel Islands", highincome)] <- "Jersey and Guernsey"
+highincome[grep("Virgin Islands \\(U.S.\\)", highincome)] <- "US Virgin Islands"
+highincome[grep("St. Kitts and Nevis", highincome)] <- "Saint Kitts and Nevis"
+
+
+
+for (i in 1:nrow(blacklist)) {
+  if (any(grepl(blacklist$jurisdiction[i],lowincome)) == TRUE){
+    blacklist$income[i] <- "low"
+  } else if(any(grepl(blacklist$jurisdiction[i],lowermiddleincome) == TRUE)){
+    blacklist$income[i] <- "lower middle"
+  } else if (any(grepl(blacklist$jurisdiction[i],uppermiddleincome) == TRUE)) {
+    blacklist$income[i] <- "upper middle"
+  } else if (any(grepl(blacklist$jurisdiction[i],highincome) == TRUE)){
+    blacklist$income[i] <- "high"
+  } else {
+    blacklist$income[i] <- "NA"
+  }
+  
+}
+
+membership <- read.csv("data/Internationalmembers.csv", stringsAsFactors = FALSE, strip.white = TRUE, sep = ";")
+
+for (i in 1:nrow(blacklist)) {
+  if (any(grepl(blacklist$jurisdiction[i], membership$jurisdiction)) == TRUE) {
+    blacklist$member[i] <- "yes"
+  } else {
+    blacklist$member[i] <- "no"
+  }
+}
+
+
+for(i in 1:nrow(blacklist)) {
+  if (blacklist$blacklisted.[i] == "yes" & blacklist$income[i] == "high" | blacklist$blacklisted.[i] == "yes" & blacklist$income[i] == "upper middle" & blacklist$member[i] == "yes" | blacklist$blacklisted.[i] == "yes" & blacklist$income[i] == "NA" | blacklist$blacklisted.[i] == "yes" & blacklist$Passes.Criterion.Fair.Taxation[i] == "no") {blacklist$blacklisted.[i] <- "yes" 
+} else if ( blacklist$blacklisted.[i] == "yes" & !blacklist$income[i] == "high"  & !blacklist$member[i] == "yes") {blacklist$blacklisted.[i] <- "yes (lower income)"
+} else {}}
+
+
+colnames(blacklist) <- c("jurisdiction", "blacklisted?", "Passes Criterion Tax Transparency", "Passes Criterion Fair Taxation", "Passes Criterion Anti Beps", "Listed solely on criterion two", "Income Level", "OECD member, G20 member, EU candidate or Financial Center?")
+
+
+write.csv(blacklist, file = "outcomes/blacklist.csv", row.names = FALSE)
+
+```
+
+
+
+
+
+```{r}
+blacklist <- as.data.frame(sapply(blacklist,gsub,pattern = "yes \\(lower income\\)",replacement="x\\*"))
+blacklist <- as.data.frame(sapply(blacklist,gsub,pattern = "yes",replacement="X"))
+blacklist <- as.data.frame(sapply(blacklist, gsub, pattern = "no", replacement=""))
+
+write.csv(blacklist, file = "outcomes/blacklist(with X'ex).csv", row.names = FALSE)
+write.xlsx(blacklist, file = "final blacklist/final blacklist.xlsx", sheetName = "Blacklist", row.names = FALSE, col.names = TRUE, append = TRUE, showNA = FALSE)
+```
+
+
