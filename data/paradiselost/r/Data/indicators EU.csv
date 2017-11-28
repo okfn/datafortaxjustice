@@ -1,0 +1,29 @@
+Countries;tprules;thincap;cfcrules
+Austria;yes;yes;no
+Belgium;yes;yes;no
+Bulgaria;yes;yes;no
+Croatia;yes;yes;no
+Cyprus;yes;no;no
+Czech Republic;yes;yes;no
+Denmark;yes;yes;yes
+Estonia;yes;no;no
+Finland;yes;yes;yes
+France;yes;yes;yes
+Germany;yes;yes;yes
+Greece;yes;yes;yes
+Hungary;yes;yes;yes
+Ireland;yes;no;no
+Italy;yes;yes;yes
+Latvia;yes;yes;yes
+Lithuania;yes;yes;yes
+Luxembourg;yes;yes;no
+Malta;no;no;no
+Netherlands;yes;no;no
+Poland;yes;yes;yes
+Portugal;yes;yes;yes
+Romania;yes;yes;no
+Slovak Republic;yes;yes;no
+Slovenia;yes;yes;no
+Spain;yes;no;yes
+Sweden;yes;no;yes
+United Kingdom;yes;yes;yes

@@ -1,0 +1,92 @@
+Countries;tprules;thincap;cfcrules
+Albania ;yes;yes;no
+American Samoa ;NA;NA;NA
+Anguilla ;no;no;no
+Antigua and Barbuda ;no;no;no
+Armenia ;yes;no;no
+Aruba ;yes;no;no
+Australia ;yes;yes;yes
+Bahamas ;no;no;no
+Bahrain ;no;no;no
+Barbados ;no;no;no
+Belize ;NA;NA;NA
+Bermuda ;no;no;no
+Bosnia and Herzegovina ;yes;yes;no
+Botswana ;yes;yes;no
+Brazil ;yes;yes;yes
+British Virgin Islands ;no;no;no
+Cabo Verde;yes;yes;yes
+Canada ;yes;yes;yes
+Cayman Islands ;no;no;no
+Chile ;yes;yes;yes
+China ;yes;yes;yes
+Hong Kong ;yes;no;no
+Macao;no;no;no
+Colombia ;yes;yes;yes
+Cook Islands ;NA;NA;NA
+Costa Rica ;yes ;no;no
+Curaçao ;yes;yes;no
+Dominica ;yes;yes;no
+Faroe Islands ;NA;NA;NA
+Fiji ;yes;yes;no
+Former Yugoslav Republic of Macedonia ;yes;yes;no
+Georgia ;yes;no;no
+Greenland ;yes;yes;yes
+Grenada ;no;no;no
+Guam ;yes;yes;no
+Guernsey ;no;no;no
+Iceland ;yes;yes;yes
+India ;yes;no;no
+Indonesia ;yes;yes;yes
+Isle of Man ;no;no;no
+Israel ;yes;no;yes
+Jamaica ;yes;no;no
+Japan ;yes;yes;yes
+Jersey ;no;no;no
+Jordan ;yes;no;no
+Korea;yes;yes;yes
+Malaysia ;yes;yes;no
+Maldives ;no;no;no
+Mauritius ;yes;no;no
+Mongolia;yes;no;no
+Montenegro ;yes;no;no
+Montserrat ;NA;NA;NA
+Morocco ;yes;no;no
+Namibia ;yes;yes;no
+New Caledonia ;NA;NA;NA
+Norway ;yes;yes;yes
+Oman ;yes;yes;no
+Panama ;yes;no;no
+Peru ;yes;yes;yes
+Qatar ;yes;no;no
+Saint Kitts and Nevis ;no;no;no
+Saint Lucia ;yes;no;no
+Saint Vincent and the Grenadines ;NA;NA;NA
+Samoa ;NA;NA;NA
+Saudi Arabia ;yes;no;no
+Serbia ;yes;yes;no
+Seychelles ;no;no;no
+Singapore ;yes;no;no
+South Africa ;yes;yes;no
+Swaziland ;no;no;no
+Taiwan ;yes;yes;yes
+Thailand ;yes;no;no
+Trinidad and Tobago ;no;no;no
+Tunisia ;yes;yes;no
+Turkey ;yes;yes;yes
+Turks and Caicos Islands ;NA;NA;NA
+United Arab Emirates ;no;no;no
+United States ;yes;yes;yes
+Uruguay ;yes;no;no
+US Virgin Islands ;no;yes;no
+Viet Nam;yes;yes;no
+Andorra;yes;no;no
+Liechtenstein;yes;no;yes
+Monaco;no;no;no
+San Marino;NA;NA;NA
+Switzerland;yes;yes;no
+Marshall Islands;NA;NA;NA
+Nauru;NA;NA;NA
+Niue;NA;NA;NA
+Palau;NA;NA;NA
+Vanuatu;NA;NA;NA
