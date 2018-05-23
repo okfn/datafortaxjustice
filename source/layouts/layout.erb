@@ -21,6 +21,12 @@
         <link rel="stylesheet" href="//a.okfn.org/html/oki/panel/assets/css/frontend.css"/>
         <%= stylesheet_link_tag 'main' %>
         <%= javascript_include_tag 'vendor/modernizr-custom' %>
+        <script>
+          var okiConsent = {
+            analyticsTrackingID: 'UA-48682838-9',
+          };
+        </script>
+        <script src="https://a.okfn.org/html/oki/consent/assets/js/consent.js"></script>
     </head>
     <body>
         <div id="ok-panel" class="closed"><div class="container"><iframe src="//a.okfn.org/html/oki/panel/panel.html" scrolling="no"></iframe></div></div>
@@ -42,12 +48,7 @@
         <script>
           <% if current_page.data.js %>
             <%= current_page.data.js %>
-
           <% end %>
-            var _gaq=[['_setAccount','UA-48682838-9'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
     </body>
 </html>
