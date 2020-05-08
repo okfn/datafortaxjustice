@@ -2,7 +2,7 @@ name: Middleman
 
 on:
   push:
-    branches: [update-202005]
+    branches: [master]
 
 jobs:
   build_and_deploy:
