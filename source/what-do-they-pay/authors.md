@@ -3,7 +3,7 @@
 : Visiting Fellow, King’s College London
 
 - Jonathan Gray
-: Prize Fellow, Institute for Policy Research, University of Bath
+: Lecturer in Critical Infrastructure Studies, Department of Digital Humanities, King's College London
 : Co-Founder, Public Data Lab
 : Senior Advisor, Open Knowledge International
 
