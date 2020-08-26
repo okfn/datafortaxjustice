@@ -1,0 +1,78 @@
+<p>The civil society proposals for CBCR data therefore cover four main areas:</p>
+
+<ul>
+  <li>
+    <p>Firstly there is <strong>identity</strong>: which is the multinational group to which the data refers, in which jurisdictions it operates, and under what names (e.g. those of subsidiary or branch entities) it is known in that place.</p>
+  </li>
+  <li>
+    <p>Secondly there is <strong>activity</strong>: what is the scale of the group’s sales, assets and employment for each jurisdiction of operation<sup id="fnref:28"><a href="#fn:28" class="footnote">7</a></sup>.</p>
+  </li>
+  <li>
+    <p>Thirdly there are <strong>intra-group transactions</strong>: in order to understand the real patterns of activity and profitability and how these are influenced by transactions within a group we need to know what are the intra-group components of sales and purchases, of royalties received and paid, and of interest received and paid. In addition, because sales can, of course, be made both from and to a place it can be important to know figures for both if they are materially different for a location<sup id="fnref:29"><a href="#fn:29" class="footnote">8</a></sup>.</p>
+  </li>
+  <li>
+    <p>Fourthly there is <strong>key financial data</strong>: what are the levels of declared profit or loss before tax, and of tax accrued and paid. (See also detailed discussion of data fields in section 3.)<sup id="fnref:30"><a href="#fn:30" class="footnote">9</a></sup></p>
+  </li>
+</ul>
+
+<p>When the OECD was mandated to create a CBCR reporting standard in 2013, it followed closely the civil society proposals that had led to that mandate. The omissions and variances from the ultimate standard fall in three areas. In activity, the OECD standard includes employee number but omits payroll costs. It was argued that payroll information was too sensitive to disclose in some locations where there were few employees. In intra-group transactions, the OECD standard includes sales but omits purchases, royalties and interest. The ultimate standard would like to know tangible asset investment: the OECD uses a financial capital approximation instead. The table above summarises these differences. One notable issue where agreement was secured from the OECD despite considerable opposition was that the data must be made available for all jurisdictions in which a multinational corporation has an operation: it was claimed by many who made representation that this was unnecessary and only larger jurisdictions need be disclosed. These representations ignored the fact that this would have continued to hide almost all tax haven usage and that intra-group transactions are rarely included in assessments of materiality. Agreement from the OECD on this issue was vital for the securing of meaningful CBCR data in the long term.</p>
+
+<p>A big shortfall with the OECD standard, explored in section 3, is the availability of the data. Two major setbacks occurred during the negotiations of the OECD BEPS process (the Base Erosion and Profit Shifting action plan that took place from 2013-2015). First, the requirement to make data public was replaced by a requirement to provide data privately to tax authorities. Second, that requirement was narrowed further, so that data would be provided only to the tax authority in a multinational group’s headquarters jurisdiction. This in turn necessitated the complex and ongoing creation of a structure for exchange of CBCR information between tax authorities.</p>
+
+<p>One particularly damaging result is a systemic bias against lower-income countries in access to  information. The evidence suggests that OECD countries lose 2-3% of their total tax revenues to multinational profit-shifting, compared to 6-13% in lower-income countries (Cobham &amp; Gibson, 2016, based on Crivelli, de Mooij &amp; Keen, 2015). The OECD-imposed hurdles to receiving CBCR information act to exacerbate the inequality in global taxing rights, as detailed in Knobel &amp; Cobham (2016). A third issue is the relatively high turnover threshold for reporting MNEs (€750m annually), and may also introduce a systematic bias, if as seems likely lower-income countries have a higher share of their MNE operations carried out by smaller MNEs.</p>
+
+<p>The map below illustrates the problem of unequal access to the agreed data. Highlighted are those countries which are eligible, as of August 2015, to receive CBCR data from participating tax authorities (which, recall, are the headquarters countries of multinationals and so predominantly OECD countries themselves). The picture remains challenging for lower-income countries (Knobel and Cobham, 2016).</p>
+
+<p>The hurdles to information access are two: countries must be signatories to the Multilateral Competent Authority Agreement (CBC-MCAA) for automatic exchange of information based on Article 6 of the Multilateral Convention on Mutual Administrative Assistance in Tax Matters;<sup id="fnref:5"><a href="#fn:5" class="footnote">10</a></sup> and have undergone the "peer reviews" of the Global Forum on Transparency and Exchange of Information for Tax Purposes and been found to be “compliant,” “largely compliant” or “partially compliant” with the confidentiality standard.<sup id="fnref:6"><a href="#fn:6" class="footnote">11</a></sup></p>
+
+<p>Some lower-income countries have taken sensible steps to undermine the OECD restrictions, by legislating for direct local filing of CBCR. In practice, however, the balance of power between tax authorities and MNEs means that this may be easier for China to enforce than, say, Malawi.</p>
+
+<p class="fullwidth image"><a href="/what-do-they-pay/signatories.svg"><img src="/what-do-they-pay/signatories.svg" alt="" /></a> <em>Signatories of Multilateral Competent Authority Agreement (CBC-MCAA) and compliance with the confidentiality standard, EY, August 2015<sup id="fnref:7"><a href="#fn:7" class="footnote">12</a></sup></em></p>
+
+<p>The major accountability channels supported by CBCR rest, ultimately, on the public availability of data. This also supports combination with a range of other data types, including both contextual information about jurisdictions, and a range of related information about multinational groups and their networks and activities.</p>
+
+<h4 id="beyond-country-by-country-reporting-data">Beyond Country-by-Country Reporting Data?</h4>
+
+<p>While country-by-country reporting information would constitute a central and vital part of a global public database, other further information might be added in order to address some of the interests and concerns that were surfaced through the user stories and participatory design activities mentioned in the previous section – from journalists and civil society organisations wishing to examine tax avoidance claims in relation to local economic activity, to researchers wishing to layer different kinds of information in order to contextualise CBCR data with information on GDP, population or other types of economic data. Here we discuss two areas of information which issue from the user stories: company information (including beneficial ownership data), and additional contextual information.</p>
+
+<h5 id="beneficial-ownership-and-other-company-information">Beneficial Ownership and Other Company Information</h5>
+
+<p>While CBCR data would give users of a global database a good overview of the tax contributions and economic activities of a multinational, it would not in itself enable them to understand the structure and composition of a corporate group. For this, further company information would be required, including who really owns and controls a given legal entity, and how, which would reveal the structure of corporate groups by providing so-called "beneficial ownership" data, as well as other kinds of information about its operations.</p>
+
+<p>The request for public registers of the beneficial ownership of companies, trusts and foundations was one of the three main proposals in the platform set out by TJN after its establishment in 2003 (Murphy, Christensen &amp; Kimmis, 2005). Over the past few years there have been a number of civil society initiatives asking for beneficial ownership information to be collected, and to be made public (cf. Gray &amp; Davies, 2015). Multiple jurisdictions have now begun to introduce public registers of the beneficial ownership of companies, including a range of commitments from Afghanistan and France to the Netherlands and Nigeria at the London Anti-Corruption Summit in May 2016; and a pan-EU initiative through the revision of the Anti-Money Laundering Directive.</p>
+
+<p>The result of these initiatives, and additional voluntarily provided information, will be brought together over in a new Global Beneficial Ownership Register (Hussain, 2016). This will combine through the CBCR identity information to extend substantially the knowledge of multinational networks. Similarly, data from registers with related information such as the UK’s Companies House will allow the combination of CBCR with data including company accounts. Journalists, researchers and civil society groups have begun to explore and experiment with this newly available information,<sup id="fnref:8"><a href="#fn:8" class="footnote">13</a></sup> and there are many opportunities to build stronger connections between this and policy, advocacy and research work around the tax contributions of multinationals.</p>
+
+<h5 id="additional-contextual-information">Additional Contextual Information</h5>
+
+<p>In addition, it may be possible to combine partially aggregated country-by-country data. There are national surveys of multinationals headquartered in the USA, Germany and Japan, of which some statistics are made public. In the USA case at least, this provides the basis for broad analysis of the pattern of global profit shifting (e.g. Cobham &amp; Janský, 2015; Clausing, 2016). Where these are comprehensive, they may provide the ‘frame’ into which more detailed individual CBCR data fits - for example, to understand the proportion of the activity of US multinationals in a given country for which CBCR data is available.</p>
+
+<p>Further contextual information may also be brought in. This could include data on stocks and flows of foreign direct investment - for example, from the UNCTAD database and/or the coordinated (direct and portfolio) investment surveys of the IMF; on international investment positions and national balance of payments data (IMF); on bilateral banking positions (BIS); and on trade flows (UNCTAD, IMF).</p>
+
+<p>In terms of broader context for understanding the scale and intensity of multinational activity, national-level data could also be included on, for example, GDP, population, labour force (e.g. World Bank and ILO) and of course tax revenues (e.g. ICTD-WIDER Government Revenue Dataset).</p>
+
+<div class="footnotes">
+  <ol start="7">
+    <li id="fn:28">
+      <p>Additional data on the type of activities in a given jurisdiction is also provided by some banks under CRD IV (e.g. Unicredit and Intesa Saopaolo), and could provide valuable detail for wider CBCR too. As in other cases (see chapter 3), this would raise issues of standardisation among reporting companies. <a href="#fnref:28" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:29">
+      <p>Additional possibilities here include intra-group dividends and intra-group derivatives, both also used in profit-shifting. <a href="#fnref:29" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:30">
+      <p>An additional possibility here is deferred tax. <a href="#fnref:30" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>See: https://www.oecd.org/tax/automatic-exchange/about-automatic-exchange/cbc-mcaa.pdf <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p>See: https://www.oecd.org/tax/transparency/exchange-of-information-on-request/ratings/#d.en.342263 <a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p>https://webforms.ey.com/Publication/vwLUAssets/ey-country-implementation-of-beps-actions-8-10-and-13-august-2015/$FILE/ey-country-implementation-of-beps-actions-8-10-and-13.pdf <a href="#fnref:7" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:8">
+      <p>See, e.g. https://www.globalwitness.org/en-gb/blog/what-does-uk-beneficial-ownership-data-show-us/ <a href="#fnref:8" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>

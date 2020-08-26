@@ -1,0 +1,115 @@
+<h4 id="the-oecd-standard-national-and-regional-implementations">The OECD Standard: National and Regional Implementations</h4>
+
+<p>As is typically the case with changes to the OECD’s international tax rules, implementation of the standard has been rapid and widespread. While the standard sticks relatively closely to significant elements of the civil society proposals, the question of interest is whether the information will be made public. In this regard, there are ongoing processes and political discussions in multiple jurisdictions.</p>
+
+<p>The most important, in terms of potential coverage as a share of the global activity of multinationals, is the process at EU level. While MEPs and committees of the European Parliament have tended to support publication of OECD standard CBCR, the European Commission in April, 2016 brought forward a more limited proposal. The Commission (EC, 2016) proposes to limit the data fields to be made public, and also to aggregate reporting for all non-EU jurisdictions except certain ‘tax havens’. They noted that:</p>
+
+<blockquote>
+  <p>Public reporting does not serve the same purpose as information sharing and reporting between tax authorities.  There are some types of information that are required to be shared between tax authorities, but that are not part of this latest proposal for public CBCR.  EU tax authorities will receive 12 pieces of information [under implementation of the OECD standard], whereas public CBCR will consist of just seven pieces of information. EU tax authorities will receive more granular data for all third countries in which an EU company is active. They will also get from companies more complex data relating to the breakdown of a group's turnover between that made with external parties and that made solely between group entities, as well as figures for stated capital and a company’s tangible assets.</p>
+</blockquote>
+
+<blockquote>
+  <p>When it comes to public disclosure, it is important that EU citizens get information about where in the EU companies are paying taxes. Citizens also have a legitimate interest in knowing whether companies active in the EU are also active in so-called tax havens. However, demanding publicly disaggregated data for all third countries could affect companies' competitiveness and divulge information on key strategic investments in a given country. Similarly, the disclosure of turnover and purchases within a group poses a threat to multinationals in that it could divulge key information to competitors.</p>
+</blockquote>
+
+<p>Civil society groups (e.g. ActionAid <em>et al</em>., 2016) have pointed out the inconsistencies in this argument. The basis for the proposed exclusions, both of a number of the data fields and of reporting for (most) non-EU jurisdictions, would apply equally to the EU’s extant public CBCR standards for financial institutions and the extractive sector. It is at best unclear why any of the Commission justifications fail to apply, or apply differently, in those sectors. In addition, the logic applied assumes that CBCR data is only of interest for tax purposes. This is not the case: the interest is much broader and CBCR should be considered to be accounting and not tax data as a result (Murphy, 2003 and 2012).</p>
+
+<p>Discussions on publication of CBCR data are also ongoing in a range of EU member states. In France, MPs voted for public OECD CBCR, before the government managed to reverse the vote using a technicality. In the UK, the government agreed in September 2016 an opposition amendment to provide Treasury with the power, but not the obligation, to require public OECD CBCR. In addition, a number of governments have indicated their support for public OECD CBCR including the UK, which prompted supportive discussions at the Council of Ministers in February 2016,<sup id="fnref:10"><a href="#fn:10" class="footnote">15</a></sup> and the Netherlands, which recently released a letter in support.<sup id="fnref:11"><a href="#fn:11" class="footnote">16</a></sup></p>
+
+<p>While data is still lacking, it may be that a majority of multinationals within the scope of OECD CBCR (e.g. with group revenues over €750m) operate within the EU. As such, an EU requirement for full publication would have global impact. Indirectly, it would also be likely to remove most of the resistance elsewhere, since for others to follow suit would simply be to level the playing field. Unilateral steps by e.g. the UK or Australia could set the path for others to follow.</p>
+
+<p>While these national sources of CBCR data have the potential to be extremely valuable if they are made public, in many cases we are still waiting for data to be published.</p>
+
+<h4 id="sector-specific-information">Sector Specific Information</h4>
+
+<h5 id="extractive-industries-data">Extractive Industries Data</h5>
+
+<p>Information from extractive industries could be very useful in supporting experimentation towards a global civil society database on multinational tax contributions. Multilateral initiatives like the Extractive Industries Transparency Initiative (EITI) have helped to secure the disclosure of corporate data from multinationals active around the extraction of oil, gas, minerals and other natural resources.<sup id="fnref:12"><a href="#fn:12" class="footnote">17</a></sup> The EITI standard includes the disclosure of government revenues and company payments – including "comprehensive disclosure of taxes and revenues". In addition to voluntary transparency initiatives like EITI, the past few years has also seen the introduction of disclosure rules through sections of associated legislation – such as Section 1504 of the US Dodd Frank Act (which is in the process of being repealed)<sup id="fnref:13"><a href="#fn:13" class="footnote">18</a></sup>, and the EU Accounting Directive.</p>
+
+<p>However, there are unfortunate limitations to the data that is currently disclosed with respect to the economic activities and tax contributions of multinationals. Perhaps this partly reflects a historical focus of extractive industry transparency standards on holding corrupt governments to account, rather than looking at the transnational tax affairs of multinationals. Extractive industries transparency was often framed as one of governments failing to pass the benefits of large extractive contracts on to citizens. These standards therefore share common omissions: there is little or no data on companies’ activity, intra-group transactions or profitability. The data on payments made is intended to allow comparison with public finances, to support government accountability - but not with any denominators that support corporate accountability. When used in combination with other contextual data – such as production volumes, prices and costs – extractives payment data can contribute to understanding whether or not companies are depriving governments of public revenues. But its value in relation to obtaining a more joined up picture of the tax affairs of multinationals remains limited. There are currently efforts to combine public CBCR with the specific rules for the extractive industries, in order to overcome these deficiencies. This makes it important to note the specific information requirements of this sector when considering the more general demand for public CBCR data.</p>
+
+<h5 id="financial-institutions">Financial Institutions</h5>
+
+<p>Another area where sector specific transparency initiatives could provide information for a global database is around financial institutions. For example, the EU Capital Requirements Directive IV (CRD IV) requires the disclosure of information across three of the main four areas described above, which is enough information to undertake basic analysis of the alignments and misalignments between economic activity and tax contributions. Given that this was at the time of writing the best available source of "good enough" CBCR data, we decided to explore issues related to gathering it into a public civil society database. Below we discuss some of the issues that we encountered that may serve to inform further experimentation in this area.</p>
+
+<p>Firstly there is an issue related to the <strong>discoverability</strong> of CRD IV data. Companies are required to make this information available, but there is currently no central point of reference or official aggregation mechanism for CRD IV data. Instead one has to go to search for this either on the web or on the websites of financial institutions. As a test we started with several lists of the top European banks<sup id="fnref:14"><a href="#fn:14" class="footnote">19</a></sup> in order to see whether we could assemble a small pilot CBCR dataset – including at a workshop with a group of researchers, journalists, civil society organisations and open data activists, as well as with student groups at King’s College London and Charles University in Prague.<sup id="fnref:15"><a href="#fn:15" class="footnote">20</a></sup> Working from these reference lists, we devised several strategies for finding CRD IV data on company websites – including through targeted queries.</p>
+
+<p>Once the relevant information is found, the next issue is <strong>machine readability</strong>. Often CRD IV is published in the context of company reports in PDF format, which means that additional work is required to extract structured data. In the workshop we experimented with several online tools to extract structured tables from reports in order to copy them into an online spreadsheet.<sup id="fnref:16"><a href="#fn:16" class="footnote">21</a></sup> As CBCR information may potentially be spread across several different reports or parts of reports, further work is required to identify and extract relevant data.</p>
+
+<p>Next there are issues related to the <strong>comparability</strong> of the data. Here we encountered numerous issues, such as:</p>
+
+<ul>
+  <li>
+    <p>The <strong>lack of standardisation</strong> in the names of countries or regions (including contestation and different conceptions around what counts as a country), and/or in the degree to which subsidiaries are listed;</p>
+  </li>
+  <li>
+    <p>The <strong>variable use of groups of countries or regions</strong> for reporting purposes (such as  "Channel Islands" or “Asia”);</p>
+  </li>
+  <li>
+    <p><strong>Reporting by company rather than by country</strong> (including banks being listed in country columns, or listing multiple subsidiaries per country, which renders comparison more difficult);</p>
+  </li>
+  <li>
+    <p>The <strong>extensive use of "other" sections</strong> to describe different aspects of the operations of a group in a way which was not comparable;</p>
+  </li>
+  <li>
+    <p>The use of <strong>different currencies</strong>;</p>
+  </li>
+  <li>
+    <p><strong>Different descriptions and uses of similar metadata fields</strong> (which may carry slightly different meanings, depending on the financial processes and context of the company or group);</p>
+  </li>
+  <li>
+    <p><strong>Missing and blank values</strong>; and</p>
+  </li>
+  <li>
+    <p><strong>Lack of explanation</strong> where CBCR totals do not reconcile to consolidated group statements.</p>
+  </li>
+</ul>
+
+<p>In order to mitigate some of these issues, we created a basic protocol for collecting and verifying data, based on the extraction of structured data, and the reconciliation of data fields with various relevant international standards (such as ISO standards for countries and currencies); units (e.g. thousands or millions); as well as reference fields (e.g. number of employees, tax paid, turnover, etc).<sup id="fnref:17"><a href="#fn:17" class="footnote">22</a></sup> Through this process we wanted to facilitate a basic level of "data work" to harmonise the data we could obtain, whilst also keeping track of provenance (e.g. original URLs) and differences (e.g. fields that were reported by some multinationals and not others), and versions (e.g. original labels and metadata descriptions, original currencies, etc).</p>
+
+<p class="image"><img src="/what-do-they-pay/spreadsheet.png" alt="image alt text" />
+<em>Template spreadsheet for collecting structured data from PDF reports.</em></p>
+
+<p>This exercise serves to highlight some of the different issues that would likely be encountered in the assembly of a civil society database. As alluded to above, it also suggests that the purpose would not simply be to assemble and provide the best available public information about the economic activities and tax contributions of multinationals. A database could also serve to highlight what campaigners, civil society groups, public institutions and policy-makers can learn about the information about multinationals which is disclosed through various kinds of disclosure initiative. Furthermore it could also facilitate the coordination and documentation of different kinds of collaborative "data work" between diverse actors who share an interest in this information – which one of us elsewhere describes as a “participatory data infrastructure” (Gray &amp; Davies, 2015).</p>
+
+<h4 id="voluntary-cbcr-information">Voluntary CBCR Information</h4>
+
+<p>One more source of CBCR information (and other associated information about multinational tax contributions and economic activity) is through voluntary disclosures. Multinationals such as Barclays and Vodafone have previously published CBCR data as part of transparency and corporate responsibility initiatives. For example, upon publishing their CBCR data, Barclays wrote:</p>
+
+<blockquote>
+  <p>Bank taxation remains a matter of some public interest, and we believe that Barclays should take a lead in explaining our activity transparently so that we can engage with all our stakeholders on an informed basis.</p>
+</blockquote>
+
+<p>This may be a growing source of information, as multinationals decide to pursue proactive disclosure in order to reassure investors, shareholders, customers, media and other publics about their tax status – both to demonstrate leadership around an area of growing ethical and political concern, as well as to address concerns about risk from tax minimisation strategies. Preliminary exploration of such voluntary data has shown that data is often reported in different ways, and sometimes only partially – with geographical or other omissions.<sup id="fnref:31"><a href="#fn:31" class="footnote">23</a></sup> Thus while it is an important source of data, we suspect that there is not yet enough comparable data to be used as the basis for a pilot database.</p>
+
+<div class="footnotes">
+  <ol start="15">
+    <li id="fn:10">
+      <p>See: https://hansard.parliament.uk/Commons/2016-02-23/debates/16022347000006/ECOFIN12February2016 <a href="#fnref:10" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:11">
+      <p>See: https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/kamerstukken/2016/10/19/tk-motie-merkies-over-country-by-country-reporting/tk-motie-merkies-over-country-by-country-reporting.pdf <a href="#fnref:11" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:12">
+      <p>See: https://eiti.org/ <a href="#fnref:12" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:13">
+      <p>See: https://politicsofpoverty.oxfamamerica.org/2017/02/thank-you-to-the-187-members-of-the-house-and-47-senators-who-voted-against-corruption/ <a href="#fnref:13" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:14">
+      <p>Such as: http://www.relbanks.com/top-european-banks/assets <a href="#fnref:14" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:15">
+      <p>Thanks to Petr Janský at Charles University; Tommaso Venturini and Liliana Bounegru at King’s College London; and to all of their students for contributing to these experiments in data collection, exploration and analysis. <a href="#fnref:15" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:16">
+      <p>Such as: https://pdftables.com/ <a href="#fnref:16" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:17">
+      <p>Thanks to our colleague Tim Davies of the Open Data Services Co-operative for creating the initial template Google Spreadsheet at the workshop in Oxford. <a href="#fnref:17" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:31">
+      <p>See, for example: http://www.taxresearch.org.uk/Blog/2015/12/21/vodafone-has-a-long-way-to-go-before-it-is-doing-country-by-country-reporting/ and https://www.home.barclays/content/dam/barclayspublic/docs/Citizenship/Reports-Publications/CountrySnapshot.pdf <a href="#fnref:31" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>

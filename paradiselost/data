@@ -1,0 +1,139 @@
+<h3 id="data">Data</h3>
+
+<p>We have published the data used for this report using <a href="https://datahub.io/opendatafortaxjustice">Datahub</a>. DataHub is the fastest way for individuals and teams to find, share and publish high quality data online. Follow the instructions on any of the following datasets to import the data into your tool using R, Pandas, Python, Javascript or Ruby. R users can also download further <a href="https://github.com/okfn/datafortaxjustice/tree/master/data/paradiselost/r">.r and .rmd files via Github</a>.</p>
+
+<h4 id="final-blacklist">Final blacklist</h4>
+
+<ul>
+  <li>
+    <p>Final blacklist - <a href="https://datahub.io/opendatafortaxjustice/blacklist">CSV / JSON</a> / <a href="https://github.com/okfn/datafortaxjustice/blob/master/data/paradiselost/finalblacklist.xlsx?raw=true">XLS</a></p>
+  </li>
+  <li>
+    <p>EU blacklist - <a href="https://datahub.io/opendatafortaxjustice/blacklisteu">CSV / JSON</a> / <a href="https://github.com/okfn/datafortaxjustice/blob/master/data/paradiselost/final%20blacklist-EU.xlsx?raw=true">XLS</a></p>
+  </li>
+</ul>
+
+<h4 id="outcomes">Outcomes</h4>
+
+<ul>
+  <li>
+    <p>Blacklist(with X'ex) - <a href="https://datahub.io/opendatafortaxjustice/blacklistwithxex">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Country data WB - <a href="https://datahub.io/opendatafortaxjustice/countrydatawb">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Anti BEPS - <a href="https://datahub.io/opendatafortaxjustice/criteriumantibeps">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Anti BEPS-EU - <a href="https://datahub.io/opendatafortaxjustice/criteriumantibepseu">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Anti BEPS-EU (with X'es) - <a href="https://datahub.io/opendatafortaxjustice/criteriumantibepseuwithxes">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Anti BEPS (with X'es) - <a href="https://datahub.io/opendatafortaxjustice/criteriumantibepswithxes">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Fair Taxation - <a href="https://datahub.io/opendatafortaxjustice/criteriumfairtaxation">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Fair Taxation-EU - <a href="https://datahub.io/opendatafortaxjustice/criteriumfairtaxationeu">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Fair Taxation-EU (with X'es) - <a href="https://datahub.io/opendatafortaxjustice/criteriumfairtaxationeuwithxes">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Fair Taxation (with X'es) - <a href="https://datahub.io/opendatafortaxjustice/criteriumfairtaxationwithxes">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Tax Transparency - <a href="https://datahub.io/opendatafortaxjustice/criteriumtaxtransparency">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Tax Transparency (with X'es) - <a href="https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencywithxes">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Tax Transparency-EU - <a href="https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeu">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Criterium Tax Transparency-EU (with X'es) - <a href="https://datahub.io/opendatafortaxjustice/criteriumtaxtransparencyeuwithxes">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>EU blacklist (With X'ex) - <a href="https://datahub.io/opendatafortaxjustice/blacklisteuwithxex">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>EU country data WB - <a href="https://datahub.io/opendatafortaxjustice/eucountrydatawb">CSV / JSON</a></p>
+  </li>
+</ul>
+
+<h4 id="raw-data">Raw data</h4>
+
+<ul>
+  <li>
+    <p>Conduit-OFCs - <a href="https://datahub.io/opendatafortaxjustice/conduits">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Corporate tax rates - <a href="https://datahub.io/opendatafortaxjustice/corporatetaxrates">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Countries - <a href="https://datahub.io/opendatafortaxjustice/countries">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>DTTL tax withholding tax rates - <a href="https://datahub.io/opendatafortaxjustice/dttltaxwithholdingtaxrates">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Indicators - <a href="https://datahub.io/opendatafortaxjustice/indicators">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Indicators EU - <a href="https://datahub.io/opendatafortaxjustice/indicatorseu">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Income level - <a href="https://datahub.io/opendatafortaxjustice/incomelevel">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>International members - <a href="https://datahub.io/opendatafortaxjustice/internationalmembers">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>List of EU countries - <a href="https://datahub.io/opendatafortaxjustice/listofeucountries">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Preferential regimes - <a href="https://datahub.io/opendatafortaxjustice/preferentialregimes">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Sinks - <a href="https://datahub.io/opendatafortaxjustice/sinks">CSV / JSON</a></p>
+  </li>
+  <li>
+    <p>Status of Agreements 2017 - <a href="https://datahub.io/opendatafortaxjustice/statusofagreements2017">CSV / JSON</a></p>
+  </li>
+</ul>
+
+<h4 id="data-sources-per-indicator">Data sources per indicator</h4>
+
+<h5 id="criterion-1">Criterion 1</h5>
+
+<ul>
+  <li>MCAA Signatory: <a href="https://www.oecd.org/ctp/exchange-of-tax-information/MCAA-Signatories.pdf">https://www.oecd.org/ctp/exchange-of-tax-information/MCAA-Signatories.pdf</a></li>
+  <li>CRS by MCAA or Bilateral: <a href="http://www.oecd.org/tax/automatic-exchange/international-framework-for-the-crs/exchange-relationships/#d.en.345426">http://www.oecd.org/tax/automatic-exchange/international-framework-for-the-crs/exchange-relationships/#d.en.345426</a></li>
+  <li>Number of exchanges: <a href="http://www.oecd.org/tax/automatic-exchange/international-framework-for-the-crs/exchange-relationships/#d.en.345426">http://www.oecd.org/tax/automatic-exchange/international-framework-for-the-crs/exchange-relationships/#d.en.345426</a></li>
+  <li>Global Forum Rating: <a href="http://www.oecd.org/tax/transparency/exchange-of-information-on-request/ratings/">http://www.oecd.org/tax/transparency/exchange-of-information-on-request/ratings/</a></li>
+  <li>Global Forum Schedule: <a href="https://www.oecd.org/tax/transparency/about-the-global-forum/publications/schedule-of-reviews.pdf">https://www.oecd.org/tax/transparency/about-the-global-forum/publications/schedule-of-reviews.pdf</a></li>
+  <li>Multilateral Convention Signatory: <a href="http://www.oecd.org/tax/exchange-of-tax-information/Status_of_convention.pdf">http://www.oecd.org/tax/exchange-of-tax-information/Status_of_convention.pdf</a></li>
+  <li>Tax Agreements: <a href="http://eoi-tax.org/jurisdictions/#default">http://eoi-tax.org/jurisdictions/#default</a></li>
+</ul>
+
+<h5 id="criterion-2">Criterion 2</h5>
+<ul>
+  <li>Sink or Conduit?: <a href="https://www.ofcmeter.org">https://www.ofcmeter.org</a></li>
+  <li>Withholding Tax Rate on dividends:
+<a href="https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Tax/dttl-tax-withholding-tax-rates.pdf">https://www2.deloitte.com</a></li>
+  <li>Preferential tax regime: <a href="https://ec.europa.eu/taxation_customs/sites/taxation/files/2016-09-15_scoreboard-indicators.pdf">https://ec.europa.eu</a></li>
+  <li>Corporate Tax Rate: <a href="https://home.kpmg.com/xx/en/home/services/tax/tax-tools-and-resources/tax-rates-online/corporate-tax-rates-table.html">https://home.kpmg.com</a></li>
+  <li>TP Rules, Thin Cap rules, CFC rules: <a href="http://taxsummaries.pwc.com">http://taxsummaries.pwc.com</a></li>
+</ul>
+
+<h5 id="criterion-3">Criterion 3</h5>
+<ul>
+  <li>Member of inclusive Framework on BEPS: <a href="http://www.oecd.org/tax/beps/inclusive-framework-on-beps-composition.pdf">http://www.oecd.org/tax/beps/inclusive-framework-on-beps-composition.pdf</a></li>
+  <li>Inclusive Framework Signatories: <a href="http://www.oecd.org/tax/treaties/beps-mli-signatories-and-parties.pdf">http://www.oecd.org/tax/treaties/beps-mli-signatories-and-parties.pdf</a></li>
+  <li>ATAD implementation: depends on EU membership.</li>
+</ul>
