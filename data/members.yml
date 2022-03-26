@@ -1,4 +1,8 @@
 -
+  name: Centre for Public Data
+  url: https://www.centreforpublicdata.org
+  logo: centrepublicdata.png
+-
   name: Open Data Services Co-operative
   url: http://www.opendataservices.coop
   logo: opendataservices.png
@@ -135,7 +139,7 @@
 -
   name: Jonathan Gray
   url: http://jonathangray.org/
-  role: Lecturer in Critical Infrastructure Studies, Department of Digital Humanities, King's College London
+  role: Senior Lecturer in Critical Infrastructure Studies, Department of Digital Humanities, King's College London
   type: individual
 -
   name: Caelainn Barr
